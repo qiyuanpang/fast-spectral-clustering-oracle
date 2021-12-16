@@ -1,0 +1,15 @@
+method:  1 , type:  pos , n samples:  5000 , l:  3 , threshold:  0
+[3.33066907e-16+0.j 4.53249426e-02+0.j]
+[1.80411242e-16+0.j 4.53249426e-02+0.j]
+mismatch rate =  0.9512
+my time1 =  1.5385223388671876 , my time2 =  0.04083924293518067
+km time1 =  1.6045409202575684 , km time2 =  0.09092116355895996
+my cl0 rate =  0.4546 , my cl1 rate =  0.5454
+km cl0 rate =  0.4546 , km cl1 rate =  0.5454
+mismatch rate (tv) =  0.9232
+tv cl0 rate =  0.4826 , tv cl1 rate =  0.5174
+mismatch rate (with bt) =  0.9742
+bt time1 =  3.540018606185913 , bt time2 = unknown
+bt cl0 rate =  0.4288 , bt cl1 rate =  0.5712
+mismatch rate (tv) =  0.9462
+tv cl0 rate =  0.4826 , tv cl1 rate =  0.5174

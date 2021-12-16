@@ -1,0 +1,96 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 8
+
+     1000000     5000000
+
+
+kwant =
+
+     4
+
+
+what = 
+
+    "bin"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =       1000 ============================
+Elapsed time is 3.018290 seconds.
+sparsedata/1000/sparse1000bin.mat saved! 
+
+
+========================= #samples =       5000 ============================
+Elapsed time is 12.501943 seconds.
+sparsedata/5000/sparse5000bin.mat saved! 
+
+
+========================= #samples =      10000 ============================
+Elapsed time is 25.285525 seconds.
+sparsedata/10000/sparse10000bin.mat saved! 
+
+
+========================= #samples =      50000 ============================
+Elapsed time is 146.748335 seconds.
+sparsedata/50000/sparse50000bin.mat saved! 
+
+
+========================= #samples =     100000 ============================
+Elapsed time is 318.657080 seconds.
+sparsedata/100000/sparse100000bin.mat saved! 
+
+
+========================= #samples =     500000 ============================
+Elapsed time is 1681.310384 seconds.
+sparsedata/500000/sparse500000bin.mat saved! 
+
+
+========================= #samples =    1000000 ============================
+Elapsed time is 3126.806073 seconds.
+sparsedata/1000000/sparse1000000bin.mat saved! 
+
+
+========================= #samples =    5000000 ============================
+Elapsed time is 16142.647330 seconds.
+sparsedata/5000000/sparse5000000bin.mat saved! 

@@ -1,0 +1,264 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 8
+
+     1000000     5000000
+
+
+kwant =
+
+     3
+
+
+what = 
+
+    "bin"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+ncores =
+
+    40
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 40).
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0704 
+--------------------------------------------
+results from CoD(par): 
+running time 29.1362 
+#iteration:     200000 =   200 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.043943 
+computed eigenvalues: 0.123460 
+eigV error: 3.0165e-04 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 26.5188 
+#iteration:     200000 =   200 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.973233 
+computed eigenvalues: 0.388074 
+eigV error: 4.2977e-01 
+--------------------------------------------
+results from eigs: 
+running time 0.2121 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.043943 
+computed eigenvalues: 0.123460 
+eigV error: 1.9474e-12 
+
+
+========================= #samples =       5000 ============================
+nonzeros rate:     0.0041 
+--------------------------------------------
+results from CoD(par): 
+running time 33.2370 
+#iteration:    1000000 =   200 *       5000 
+computed eigenvalues: 0.000022 
+computed eigenvalues: 0.000169 
+computed eigenvalues: 0.000119 
+eigV error: 1.7116e-02 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 34.4433 
+#iteration:    1000000 =   200 *       5000 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000089 
+computed eigenvalues: 0.000050 
+eigV error: 1.1061e-02 
+--------------------------------------------
+results from eigs: 
+running time 0.1200 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.011209 
+eigV error: 6.0358e-11 
+
+
+========================= #samples =      10000 ============================
+nonzeros rate:     0.0049 
+--------------------------------------------
+results from CoD(par): 
+running time 40.5133 
+#iteration:    2000000 =   200 *      10000 
+computed eigenvalues: 1.999997 
+computed eigenvalues: 1.980352 
+computed eigenvalues: 1.992294 
+eigV error: 2.2751e-02 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 42.2889 
+#iteration:    2000000 =   200 *      10000 
+computed eigenvalues: 0.000203 
+computed eigenvalues: 0.000116 
+computed eigenvalues: 0.000059 
+eigV error: 1.1875e-02 
+--------------------------------------------
+results from eigs: 
+running time 0.3545 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000320 
+computed eigenvalues: 0.002420 
+eigV error: 1.6813e-07 
+
+
+========================= #samples =      50000 ============================
+nonzeros rate:     0.0013 
+--------------------------------------------
+results from CoD(par): 
+running time 46.9192 
+#iteration:   10000000 =   200 *      50000 
+computed eigenvalues: 1.991206 
+computed eigenvalues: 1.998911 
+computed eigenvalues: 0.000520 
+eigV error: 3.2657e-03 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 83.1323 
+#iteration:   10000000 =   200 *      50000 
+computed eigenvalues: 0.000720 
+computed eigenvalues: 0.000549 
+computed eigenvalues: 0.000331 
+eigV error: 2.1543e-02 
+--------------------------------------------
+results from eigs: 
+running time 4.0047 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000094 
+computed eigenvalues: 0.000147 
+eigV error: 5.1128e-07 
+
+
+========================= #samples =     100000 ============================
+nonzeros rate:     0.0003 
+--------------------------------------------
+results from CoD(par): 
+running time 46.8032 
+#iteration:   20000000 =   200 *     100000 
+computed eigenvalues: 0.000022 
+computed eigenvalues: 0.000241 
+computed eigenvalues: 1.999296 
+eigV error: 1.1534e-03 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 79.5494 
+#iteration:   20000000 =   200 *     100000 
+computed eigenvalues: 0.002321 
+computed eigenvalues: 0.000470 
+computed eigenvalues: 0.000696 
+eigV error: 6.0921e-02 
+--------------------------------------------
+results from eigs: 
+running time 4.4972 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000015 
+computed eigenvalues: 0.000040 
+eigV error: 8.7623e-09 
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0001 
+--------------------------------------------
+results from CoD(par): 
+running time 205.4233 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 1.999355 
+computed eigenvalues: 0.000203 
+computed eigenvalues: 0.000384 
+eigV error: 1.3814e-03 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 1757.7760 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 0.010209 
+computed eigenvalues: 0.012555 
+computed eigenvalues: 0.011765 
+eigV error: 2.2669e-01 
+--------------------------------------------
+results from eigs: 
+running time 58.1786 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000384 
+eigV error: 2.8058e-07 
+
+
+========================= #samples =    1000000 ============================
+nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(par): 
+running time 208.6943 
+#iteration:  200000000 =   200 *    1000000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000023 
+computed eigenvalues: 1.999391 
+eigV error: 1.0179e-03 
+--------------------------------------------
+results from CoD(par, filter): 
+running time 962.7080 
+#iteration:  200000000 =   200 *    1000000 
+computed eigenvalues: 0.001509 
+computed eigenvalues: 0.002584 
+computed eigenvalues: 0.002076 
+eigV error: 1.2642e-01 
+--------------------------------------------
+results from eigs: 
+running time 117.1214 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000021 
+computed eigenvalues: 0.000198 
+eigV error: 1.4357e-08 
+
+
+========================= #samples =    5000000 ============================
+nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(par): 
+running time 2396.1975 
+#iteration: 1000000000 =   200 *    5000000 
+computed eigenvalues: 1.998492 
+computed eigenvalues: 1.986985 
+computed eigenvalues: 0.530181 
+eigV error: 4.0794e-01 

@@ -1,0 +1,88 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+      500000     1000000     5000000
+
+
+kwant =
+
+     3
+
+
+what = 
+
+    "bin"
+
+
+tau =
+
+   1.0000e-03
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+    0.1000
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0001 
+# 1 converged in 4 steps, ritz(  1)=1.000030e-01, rnorm= 3.7093e-04
+# 2 converged in 13 steps, ritz(  2)=1.013516e-01, rnorm= 8.6732e-04
+# 3 converged in 20 steps, ritz(  3)=1.006243e-01, rnorm= 1.3347e-03
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=20
+
+
+--------------------------------------------
+results from chdav: 
+running time 42.7526 
+#iteration:         20 
+computed eigenvalues: 0.100003 
+computed eigenvalues: 0.100624 
+computed eigenvalues: 0.101352 
+eigV error: 1.3180e-02 
+--------------------------------------------
+results from CoD: 
+running time 1596.5396 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 0.100039 
+computed eigenvalues: 0.100106 
+computed eigenvalues: 0.100073 
+eigV error: 8.9179e-03 
+--------------------------------------------
+results from eigs: 
+running time 26.4673 
+computed eigenvalues: 0.100000 
+computed eigenvalues: 0.100398 
+computed eigenvalues: 0.100622 
+eigV error: 1.3041e-03 
+
+
+========================= #samples =    1000000 ============================

@@ -1,0 +1,15 @@
+method:  1 , type:  bin , n samples:  1000 , l:  2 , threshold:  0
+[2.26959795e-16+0.j 4.05450317e-17+0.j]
+[ 9.84179851e-17+0.j -5.61923249e-17+0.j]
+mismatch rate =  0.55
+my time1 =  0.03791899681091308 , my time2 =  0.0027930736541748047
+km time1 =  0.11781420707702636 , km time2 =  0.04155192375183105
+my cl0 rate =  0.449 , my cl1 rate =  0.551
+km cl0 rate =  0.449 , km cl1 rate =  0.551
+mismatch rate (tv) =  0.999
+tv cl0 rate =  0.0 , tv cl1 rate =  1.0
+mismatch rate (with bt) =  0.812
+bt time1 =  0.18032684326171874 , bt time2 = unknown
+bt cl0 rate =  0.538 , bt cl1 rate =  0.462
+mismatch rate (tv) =  0.528
+tv cl0 rate =  1.0 , tv cl1 rate =  0.0

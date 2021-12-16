@@ -1,0 +1,82 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+     5000000
+
+
+kwant =
+
+     3
+
+
+what = 
+
+    "abs"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+ncores =
+
+    32
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 32).
+
+
+========================= #samples =    5000000 ============================
+nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(par): 
+running time 2829.5622 
+#iteration: 1000000000 =   200 *    5000000 
+computed eigenvalues: 0.000119 
+computed eigenvalues: 0.000147 
+computed eigenvalues: 0.000218 
+eigV error: 1.3951e-02 
+[Warning: 1 of the 3 requested eigenvalues converged. Eigenvalues that did not
+converge are NaN.] 
+[> In eigs (line 176)
+In testPar (line 101)] 
+--------------------------------------------
+results from eigs: 
+running time 23790.9085 
+computed eigenvalues: 0.000000 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+eigV error:        NaN 
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.

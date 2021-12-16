@@ -1,0 +1,245 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Column 7
+
+     1000000
+
+
+kwant =
+
+    18
+
+
+what = 
+
+    "abs"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+   100
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0817 
+initial loss: 1.7640e+07 
+
+
+
+--------------------------------------------
+results from eigs(smr): 
+running time 0.2971 
+computed eigenvalues: 0.013085 
+computed eigenvalues: 0.016063 
+computed eigenvalues: 0.077637 
+computed eigenvalues: 0.134688 
+computed eigenvalues: 0.145909 
+computed eigenvalues: 0.172436 
+computed eigenvalues: 0.178221 
+computed eigenvalues: 0.201394 
+computed eigenvalues: 0.225405 
+computed eigenvalues: 0.241380 
+computed eigenvalues: 0.250027 
+computed eigenvalues: 0.255019 
+computed eigenvalues: 0.273956 
+computed eigenvalues: 0.282715 
+computed eigenvalues: 0.317793 
+computed eigenvalues: 0.332249 
+computed eigenvalues: 0.333043 
+computed eigenvalues: 0.349205 
+eigV error: 7.8718e-11 , loss: 1.2639e+03 
+--------------------------------------------
+results from eigs(lgr): 
+running time 0.0524 
+computed eigenvalues: 1.266786 
+computed eigenvalues: 1.272891 
+computed eigenvalues: 1.283591 
+eigV error: 2.4369e-07 , loss: 1.2459e+03 
+
+
+========================= #samples =       5000 ============================
+nonzeros rate:     0.0202 
+initial loss: 4.5198e+08 
+
+
+
+--------------------------------------------
+results from eigs(smr): 
+running time 0.1161 
+computed eigenvalues: 0.001760 
+computed eigenvalues: 0.072713 
+computed eigenvalues: 0.079952 
+computed eigenvalues: 0.103984 
+computed eigenvalues: 0.130567 
+computed eigenvalues: 0.133635 
+computed eigenvalues: 0.144106 
+computed eigenvalues: 0.154941 
+computed eigenvalues: 0.180921 
+computed eigenvalues: 0.190036 
+computed eigenvalues: 0.211767 
+computed eigenvalues: 0.240747 
+computed eigenvalues: 0.351709 
+computed eigenvalues: 0.352192 
+computed eigenvalues: 0.352983 
+computed eigenvalues: 0.372679 
+computed eigenvalues: 0.388237 
+computed eigenvalues: 0.392611 
+eigV error: 1.2802e-07 , loss: 6.1134e+03 
+--------------------------------------------
+results from eigs(lgr): 
+running time 0.0287 
+computed eigenvalues: 1.403394 
+computed eigenvalues: 1.470660 
+computed eigenvalues: 1.888194 
+eigV error: 3.3252e-07 , loss: 6.0972e+03 
+
+
+========================= #samples =      10000 ============================
+nonzeros rate:     0.0080 
+initial loss: 1.8063e+09 
+
+
+
+--------------------------------------------
+results from eigs(smr): 
+running time 0.3838 
+computed eigenvalues: 0.000015 
+computed eigenvalues: 0.000032 
+computed eigenvalues: 0.000047 
+computed eigenvalues: 0.000801 
+computed eigenvalues: 0.001187 
+computed eigenvalues: 0.002927 
+computed eigenvalues: 0.006871 
+computed eigenvalues: 0.012434 
+computed eigenvalues: 0.018886 
+computed eigenvalues: 0.019720 
+computed eigenvalues: 0.020915 
+computed eigenvalues: 0.021937 
+computed eigenvalues: 0.027834 
+computed eigenvalues: 0.027872 
+computed eigenvalues: 0.031388 
+computed eigenvalues: 0.033808 
+computed eigenvalues: 0.036196 
+computed eigenvalues: 0.038570 
+eigV error: 4.1310e-07 , loss: 1.2312e+04 
+--------------------------------------------
+results from eigs(lgr): 
+running time 0.0506 
+computed eigenvalues: 1.544244 
+computed eigenvalues: 1.569573 
+computed eigenvalues: 1.852103 
+eigV error: 5.9965e-07 , loss: 1.2304e+04 
+
+
+========================= #samples =      50000 ============================
+nonzeros rate:     0.0016 
+initial loss: 4.5069e+10 
+
+
+
+--------------------------------------------
+results from eigs(smr): 
+running time 4.2750 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000020 
+computed eigenvalues: 0.000027 
+computed eigenvalues: 0.000029 
+computed eigenvalues: 0.000042 
+computed eigenvalues: 0.000046 
+computed eigenvalues: 0.000050 
+computed eigenvalues: 0.000061 
+computed eigenvalues: 0.000062 
+computed eigenvalues: 0.000065 
+computed eigenvalues: 0.000068 
+computed eigenvalues: 0.000074 
+computed eigenvalues: 0.000106 
+computed eigenvalues: 0.000107 
+computed eigenvalues: 0.000199 
+computed eigenvalues: 0.000581 
+computed eigenvalues: 0.001027 
+eigV error: 4.3233e-07 , loss: 6.1294e+04 
+--------------------------------------------
+results from eigs(lgr): 
+running time 0.2012 
+computed eigenvalues: 1.886056 
+computed eigenvalues: 1.922215 
+computed eigenvalues: 1.951131 
+eigV error: 6.0248e-08 , loss: 6.1287e+04 
+
+
+========================= #samples =     100000 ============================
+nonzeros rate:     0.0010 
+initial loss: 1.7995e+11 
+
+
+
+--------------------------------------------
+results from eigs(smr): 
+running time 0.7841 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000038 
+computed eigenvalues: 0.000504 
+computed eigenvalues: 0.002805 
+computed eigenvalues: 0.004390 
+computed eigenvalues: 0.008219 
+computed eigenvalues: 0.009295 
+computed eigenvalues: 0.010636 
+computed eigenvalues: 0.014137 
+computed eigenvalues: 0.014539 
+computed eigenvalues: 0.016549 
+computed eigenvalues: 0.022406 
+computed eigenvalues: 0.024174 
+computed eigenvalues: 0.056536 
+computed eigenvalues: 0.170399 
+computed eigenvalues: 0.191303 
+computed eigenvalues: 0.209439 
+computed eigenvalues: 0.257271 
+eigV error: 1.7863e-07 , loss: 1.2108e+05 
+--------------------------------------------
+results from eigs(lgr): 
+running time 0.3348 
+computed eigenvalues: 1.962944 
+computed eigenvalues: 1.965574 
+computed eigenvalues: 1.987878 
+eigV error: 3.6805e-07 , loss: 1.2107e+05 
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0002 

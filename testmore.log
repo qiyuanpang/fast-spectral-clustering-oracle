@@ -1,0 +1,245 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Column 7
+
+     1000000
+
+
+kwant =
+
+     3
+
+
+what = 
+
+    "pos"
+
+
+tau =
+
+   1.0000e-03
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0704 
+initial loss: 3.0278e+06 
+
+# 1 converged in 4 steps, ritz(  1)=-9.999659e-02, rnorm= 8.0826e-04
+# 2 converged in 7 steps, ritz(  2)=-8.486704e-02, rnorm= 3.0986e-04
+# 3 converged in 8 steps, ritz(  3)=-3.453212e-02, rnorm= 1.8973e-04
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=8
+
+
+--------------------------------------------
+results from chdav: 
+running time 0.1938 
+#iteration:          8 
+computed eigenvalues: -0.199997 
+computed eigenvalues: -0.184867 
+computed eigenvalues: -0.134532 
+eigV error: 8.1187e-03 , loss: 8.5326e+02 
+--------------------------------------------
+results from CoD: 
+running time 1.2024 
+#iteration:     200000 =   200 *       1000 
+computed eigenvalues: -0.200000 
+computed eigenvalues: -0.184867 
+computed eigenvalues: -0.133631 
+eigV error: 2.3999e-02 , loss: 8.5326e+02 
+--------------------------------------------
+results from eigs: 
+running time 0.2539 
+computed eigenvalues: -0.101331 
+computed eigenvalues: -0.090651 
+computed eigenvalues: -0.086556 
+eigV error: 1.2239e-13 , loss: 8.5374e+02 
+
+
+========================= #samples =       5000 ============================
+nonzeros rate:     0.0041 
+initial loss: 7.2059e+07 
+
+# 1 converged in 5 steps, ritz(  1)=-9.999753e-02, rnorm= 2.7659e-04
+# 2 converged in 16 steps, ritz(  2)=-9.429698e-02, rnorm= 6.8545e-04
+# 3 converged in 16 steps, ritz(  3)=-9.193678e-02, rnorm= 9.5352e-04
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=16
+
+
+--------------------------------------------
+results from chdav: 
+running time 0.0796 
+#iteration:         16 
+computed eigenvalues: -0.199998 
+computed eigenvalues: -0.194297 
+computed eigenvalues: -0.191937 
+eigV error: 1.1708e-02 , loss: 4.2251e+03 
+--------------------------------------------
+results from CoD: 
+running time 4.1873 
+#iteration:    1000000 =   200 *       5000 
+computed eigenvalues: -0.199974 
+computed eigenvalues: -0.199823 
+computed eigenvalues: -0.199893 
+eigV error: 1.2023e-02 , loss: 4.2251e+03 
+--------------------------------------------
+results from eigs: 
+running time 0.0468 
+computed eigenvalues: -0.088339 
+computed eigenvalues: -0.083419 
+computed eigenvalues: -0.124197 
+eigV error: 3.5538e-09 , loss: 4.2257e+03 
+
+
+========================= #samples =      10000 ============================
+nonzeros rate:     0.0049 
+initial loss: 3.0081e+08 
+
+# 1 converged in 6 steps, ritz(  1)=-9.996602e-02, rnorm= 7.9576e-04
+# 2 converged in 17 steps, ritz(  2)=-9.910531e-02, rnorm= 1.0545e-03
+# 3 converged in 17 steps, ritz(  3)=-9.731961e-02, rnorm= 8.9978e-04
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=17
+
+
+--------------------------------------------
+results from chdav: 
+running time 0.2385 
+#iteration:         17 
+computed eigenvalues: -0.199966 
+computed eigenvalues: -0.199105 
+computed eigenvalues: -0.197320 
+eigV error: 1.3931e-02 , loss: 8.4961e+03 
+--------------------------------------------
+results from CoD: 
+running time 11.2159 
+#iteration:    2000000 =   200 *      10000 
+computed eigenvalues: -0.199440 
+computed eigenvalues: -0.199661 
+computed eigenvalues: -0.199631 
+eigV error: 1.6971e-02 , loss: 8.4961e+03 
+--------------------------------------------
+results from eigs: 
+running time 0.1320 
+computed eigenvalues: -0.103289 
+computed eigenvalues: -0.104965 
+computed eigenvalues: -0.093033 
+eigV error: 9.1647e-11 , loss: 8.4967e+03 
+
+
+========================= #samples =      50000 ============================
+nonzeros rate:     0.0013 
+initial loss: 7.5612e+09 
+
+# 1 converged in 5 steps, ritz(  1)=-9.994176e-02, rnorm= 9.6865e-04
+# 2 converged in 15 steps, ritz(  2)=-9.919912e-02, rnorm= 1.0516e-03
+# 3 converged in 29 steps, ritz(  3)=-9.981427e-02, rnorm= 8.6333e-04
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=29
+
+
+--------------------------------------------
+results from chdav: 
+running time 3.3002 
+#iteration:         29 
+computed eigenvalues: -0.199942 
+computed eigenvalues: -0.199814 
+computed eigenvalues: -0.199199 
+eigV error: 1.0532e-02 , loss: 4.1364e+04 
+--------------------------------------------
+results from CoD: 
+running time 91.9659 
+#iteration:   10000000 =   200 *      50000 
+computed eigenvalues: -0.199762 
+computed eigenvalues: -0.199534 
+computed eigenvalues: -0.199625 
+eigV error: 1.5693e-02 , loss: 4.1364e+04 
+--------------------------------------------
+results from eigs: 
+running time 1.2179 
+computed eigenvalues: -0.099944 
+computed eigenvalues: -0.100536 
+computed eigenvalues: -0.100551 
+eigV error: 1.7033e-11 , loss: 4.1365e+04 
+
+
+========================= #samples =     100000 ============================
+nonzeros rate:     0.0003 
+initial loss: 2.9948e+10 
+
+# 1 converged in 6 steps, ritz(  1)=-9.996170e-02, rnorm= 3.8066e-04
+# 2 converged in 6 steps, ritz(  2)=-9.705581e-02, rnorm= 1.0518e-03
+# 3 converged in 10 steps, ritz(  3)=-9.865215e-02, rnorm= 1.0169e-03
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=10
+
+
+--------------------------------------------
+results from chdav: 
+running time 1.2125 
+#iteration:         10 
+computed eigenvalues: -0.199962 
+computed eigenvalues: -0.198652 
+computed eigenvalues: -0.197056 
+eigV error: 1.1191e-02 , loss: 8.1105e+04 
+--------------------------------------------
+results from CoD: 
+running time 109.9223 
+#iteration:   20000000 =   200 *     100000 
+computed eigenvalues: -0.199693 
+computed eigenvalues: -0.199917 
+computed eigenvalues: -0.199984 
+eigV error: 9.8787e-03 , loss: 8.1105e+04 
+--------------------------------------------
+results from eigs: 
+running time 2.3693 
+computed eigenvalues: -0.098793 
+computed eigenvalues: -0.104990 
+computed eigenvalues: -0.094708 
+eigV error: 3.5129e-13 , loss: 8.1105e+04 
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0001 

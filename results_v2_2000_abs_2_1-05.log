@@ -1,0 +1,10 @@
+method:  1 , type:  abs , n samples:  2000 , l:  2 , threshold:  -0.05
+[0.33681142+0.j]
+[0.33681142+0.j]
+mismatch rate =  0.989
+my time1 =  0.0512270450592041 , my time2 =  0.009422922134399414
+km time1 =  0.09722323417663574 , km time2 =  0.050054931640625
+my cl0 rate =  0.422 , my cl1 rate =  0.578
+km cl0 rate =  0.422 , km cl1 rate =  0.578
+mismatch rate (tv) =  0.567
+tv cl0 rate =  0.0 , tv cl1 rate =  1.0

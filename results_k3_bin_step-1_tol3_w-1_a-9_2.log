@@ -1,0 +1,120 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+     1000000     5000000
+
+
+kwant =
+
+     3
+
+
+what = 
+
+    "pos"
+
+
+tau =
+
+   1.0000e-03
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+    0.1000
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =    1000000 ============================
+nonzeros rate:     0.0000 
+# 1 converged in 4 steps, ritz(  1)=1.001004e-01, rnorm= 9.9753e-04
+# 2 converged in 9 steps, ritz(  2)=1.015028e-01, rnorm= 9.1312e-04
+# 3 converged in 16 steps, ritz(  3)=1.010169e-01, rnorm= 1.1285e-03
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=16
+
+
+--------------------------------------------
+results from chdav: 
+running time 29.9381 
+#iteration:         16 
+computed eigenvalues: 0.100100 
+computed eigenvalues: 0.101017 
+computed eigenvalues: 0.101503 
+eigV error: 1.1287e-02 
+--------------------------------------------
+results from CoD: 
+running time 1763.9233 
+#iteration:  200000000 =   200 *    1000000 
+computed eigenvalues: 0.100006 
+computed eigenvalues: 0.100019 
+computed eigenvalues: 0.100037 
+eigV error: 4.9517e-03 
+--------------------------------------------
+results from eigs: 
+running time 80.7599 
+computed eigenvalues: 0.100000 
+computed eigenvalues: 0.100029 
+computed eigenvalues: 0.100281 
+eigV error: 1.6207e-04 
+
+
+========================= #samples =    5000000 ============================
+nonzeros rate:     0.0000 
+# 1 converged in 4 steps, ritz(  1)=1.000370e-01, rnorm= 6.9315e-04
+# 2 converged in 12 steps, ritz(  2)=1.007053e-01, rnorm= 1.0855e-03
+# 3 converged in 12 steps, ritz(  3)=1.047779e-01, rnorm= 1.3383e-03
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-03
+ nconv=3,  #mat-vect-prod=20,  #iter=12
+
+
+--------------------------------------------
+results from chdav: 
+running time 445.5274 
+#iteration:         12 
+computed eigenvalues: 0.100037 
+computed eigenvalues: 0.100705 
+computed eigenvalues: 0.104778 
+eigV error: 1.6270e-02 
+--------------------------------------------
+results from CoD: 
+running time 26899.0118 
+#iteration: 1000000000 =   200 *    5000000 
+computed eigenvalues: 0.100235 
+computed eigenvalues: 0.100146 
+computed eigenvalues: 0.100101 
+eigV error: 1.3365e-02 
+--------------------------------------------
+results from eigs: 
+running time 5523.5911 
+computed eigenvalues: 0.100000 
+computed eigenvalues: 0.100014 
+computed eigenvalues: 0.100076 
+eigV error: 1.0458e-03 

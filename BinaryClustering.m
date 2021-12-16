@@ -18,46 +18,58 @@ close all; clear all; clc;
 % mclc = 1: symmetric normalized Laplaican
 % mclc = 2: random walk normalized adjacency matrix
 
+format shortE
+
 mclc = 2
+npts = 100
+fname = "1000/sim" + int2str(npts) + ".json"
+fpath = "sim"+ int2str(npts)  +".png"
 
 % TODO 4: bi-clustering for a few times v.s. clustering with k eigenpairs
 % TODO 5: whether we use k-means in the second step;
 
 % prepare a toy example
-subplot(1,2,1);
-npts = 50;
-x1 = 1 + randn(npts,1)/9;
-x2 =  randn(npts,1)/9;
+%fig = figure();
+%subplot(1,2,1);
+%npts = 50;
+x1 = 1 + randn(npts/2,1)/9;
+x2 =  randn(npts/2,1)/9;
 x = [x1,x2];
-plot(x1,x2,'or'); hold on;
-x1 =  randn(npts,1)/9;
-x2 =  1 + randn(npts,1)/9;
+h(1) = plot(x1,x2,'or'); hold on;
+x1 =  randn(npts/2,1)/9;
+x2 =  1 + randn(npts/2,1)/9;
 y = [x1,x2];
 x = [x;y];
-plot(x1,x2,'*b');
+h(2) = plot(x1,x2,'*b');
 axis square;
 title('Given clusters')
 
 % compute the similarity matrix A and the matrix L
 % TODO 1: design a matrix-free method so that we don't need to generate A,
 % Lnorm, and P
-npts=size(x,1);
-sigma = 0.1;
-A=zeros(npts,npts);
-for i=1:npts
-    for j=1:npts
-        A(i,j) = exp(-norm(x(i,:)-x(j,:))^2/sigma);
-    end
-end
+%npts=size(x,1);
+%sigma = 0.1;
+%A=zeros(npts,npts);
+%for i=1:npts
+%    for j=1:npts
+%        A(i,j) = exp(-norm(x(i,:)-x(j,:))^2/sigma);
+%    end
+%end
 % binary example
 % A = zeros(npts,npts);
 % A(1:npts/4,1:npts/4) = 1;
 % A(npts/2+1:end,npts/2+1:end) = 1;
 % A(npts/4+1:npts/2,npts/4+1:npts/2) = 1;
 
+fid = fopen(fname);
+raw = fread(fid, inf);
+str = char(raw');
+A = jsondecode(str);
 
 D2inv = diag(1./sqrt(sum(A,2)));
 Dinv = diag(1./(sum(A,2)));
+size(D2inv)
+size(A)
 Lnorm = eye(npts) - D2inv*A*D2inv; % symmetric normalized Laplacian
 P = Dinv*A; % random walk normalized adjacency matrix
 
@@ -70,15 +82,22 @@ switch mclc
         vec = vec(:,2);
         idx = sign(vec - median(vec));
     case 2
-        [vecr,valr] = eigs(P,1); % working
-        idx = sign(vecr - median(vecr));
+        tic;
+        for i = 1:5
+            [vecr,valr] = eigs(P,1); % working
+            idx = sign(vecr - median(vecr));
+        end
+        time = toc/5;
 end
 
 % visualize binary clustering
 subplot(1,2,2);
 loc = find(idx==1);
-plot(x(loc,1),x(loc,2),'or'); hold on;
+h(3) = plot(x(loc,1),x(loc,2),'or'); hold on;
 loc = find(idx==-1);
-plot(x(loc,1),x(loc,2),'ob'); hold on;
+h(4) = plot(x(loc,1),x(loc,2),'ob'); hold on;
 axis square;
-title('Identified clusters')
+title("Identified clusters("+int2str(npts)+","+num2str(time)+")")
+saveas(fig, fpath);
+hold off;
+exit
