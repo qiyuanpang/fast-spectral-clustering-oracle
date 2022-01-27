@@ -1,0 +1,718 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 8
+
+     1000000     5000000
+
+
+kwant =
+
+     5
+
+
+what = 
+
+    "pos"
+
+
+tau =
+
+   1.0000e-03
+
+
+itermax =
+
+       10000
+
+
+stepsize =
+
+    0.0200
+
+
+w =
+
+     1
+
+
+alpha =
+
+    0.9000
+
+
+ncores =
+
+    40
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 40).
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0704 
+--------------------------------------------
+results from CoD(sq): 
+running time 1550.3178 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.015296 
+computed eigenvalues: 0.065500 
+computed eigenvalues: 0.074252 
+computed eigenvalues: 0.112535 
+eigV error: 2.9840e-02 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 314.4680 
+#iteration:    2050000 =  2050 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098678 
+eigV error: 9.3992e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   5 
+running time 391.5883 
+#iteration:    2600000 =  2600 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015134 
+computed eigenvalues: 0.015134 
+computed eigenvalues: 0.072746 
+eigV error: 8.8151e-04 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 1525.7512 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.055078 
+computed eigenvalues: 0.913650 
+computed eigenvalues: 0.990759 
+computed eigenvalues: 1.013625 
+eigV error: 2.3125e-01 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 1520.7240 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.875310 
+computed eigenvalues: 0.930447 
+computed eigenvalues: 0.977436 
+computed eigenvalues: 1.027073 
+eigV error: 2.4782e-01 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 1502.2424 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.069151 
+computed eigenvalues: 0.838321 
+computed eigenvalues: 0.992806 
+computed eigenvalues: 1.001050 
+eigV error: 2.7708e-01 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 14.7979 
+#iteration:     100000 =   100 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098669 
+eigV error: 4.5639e-05 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 23.0705 
+#iteration:     150000 =   150 *       1000 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+eigV error: 2.1558e-04 
+--------------------------------------------
+results from eigs: 
+running time 0.5226 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098669 
+eigV error: 2.4054e-12 
+
+
+========================= #samples =       5000 ============================
+nonzeros rate:     0.0041 
+--------------------------------------------
+results from CoD(sq): 
+running time 1850.3129 
+#iteration:   50000000 = 10000 *       5000 
+computed eigenvalues: 0.000290 
+computed eigenvalues: 0.003126 
+computed eigenvalues: 0.005130 
+computed eigenvalues: 0.030584 
+computed eigenvalues: 0.327573 
+eigV error: 2.5625e-01 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 443.1830 
+#iteration:   11750000 =  2350 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+eigV error: 9.7679e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   5 
+running time 522.1114 
+#iteration:   14250000 =  2850 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+eigV error: 9.6686e-04 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 17.8361 
+#iteration:     500000 =   100 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+eigV error: 2.9055e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 18.1246 
+#iteration:     500000 =   100 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+eigV error: 1.4040e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 21.6247 
+#iteration:     500000 =   100 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000003 
+eigV error: 9.2334e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 17.6823 
+#iteration:     500000 =   100 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+eigV error: 4.1493e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 26.7466 
+#iteration:     750000 =   150 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+eigV error: 4.8087e-04 
+--------------------------------------------
+results from eigs: 
+running time 0.1614 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.005679 
+computed eigenvalues: 0.007710 
+computed eigenvalues: 0.008016 
+eigV error: 2.0687e-14 
+
+
+========================= #samples =      10000 ============================
+nonzeros rate:     0.0049 
+--------------------------------------------
+results from CoD(sq): 
+running time 2245.0398 
+#iteration:  100000000 = 10000 *      10000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000018 
+computed eigenvalues: 0.000029 
+computed eigenvalues: 0.000040 
+eigV error: 1.5505e-03 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 1552.6843 
+#iteration:   68000000 =  6800 *      10000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000016 
+computed eigenvalues: 0.000032 
+eigV error: 9.9414e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   5 
+running time 1751.3816 
+#iteration:   80000000 =  8000 *      10000 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000031 
+eigV error: 9.9280e-04 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 48.5270 
+#iteration:    2000000 =   200 *      10000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000015 
+computed eigenvalues: 0.000031 
+eigV error: 9.5024e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 35.9079 
+#iteration:    1500000 =   150 *      10000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000030 
+eigV error: 8.4878e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 78.5026 
+#iteration:    3000000 =   300 *      10000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000014 
+computed eigenvalues: 0.000030 
+eigV error: 8.9330e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 54.5405 
+#iteration:    2500000 =   250 *      10000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000031 
+eigV error: 8.4615e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 80.2894 
+#iteration:    3500000 =   350 *      10000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000030 
+eigV error: 8.4734e-04 
+--------------------------------------------
+results from eigs: 
+running time 1.0514 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000178 
+computed eigenvalues: 0.000294 
+computed eigenvalues: 0.000621 
+eigV error: 4.5373e-11 
+
+
+========================= #samples =      50000 ============================
+nonzeros rate:     0.0013 
+--------------------------------------------
+results from CoD(sq): 
+running time 2940.8955 
+#iteration:  500000000 = 10000 *      50000 
+computed eigenvalues: 0.000028 
+computed eigenvalues: 0.000069 
+computed eigenvalues: 0.000101 
+computed eigenvalues: 0.000124 
+computed eigenvalues: 0.000945 
+eigV error: 4.7805e-03 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 3091.9352 
+#iteration:  500000000 = 10000 *      50000 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000015 
+computed eigenvalues: 0.000024 
+computed eigenvalues: 0.000037 
+computed eigenvalues: 0.000047 
+eigV error: 1.2539e-03 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   1 
+running time 3257.4993 
+#iteration:  500000000 = 10000 *      50000 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000015 
+computed eigenvalues: 0.000024 
+computed eigenvalues: 0.000037 
+computed eigenvalues: 0.000047 
+eigV error: 1.2689e-03 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 178.4900 
+#iteration:   17500000 =   350 *      50000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000018 
+computed eigenvalues: 0.000024 
+computed eigenvalues: 0.000032 
+eigV error: 9.7109e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 146.5858 
+#iteration:   12500000 =   250 *      50000 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000017 
+computed eigenvalues: 0.000023 
+computed eigenvalues: 0.000031 
+eigV error: 9.3697e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 247.6850 
+#iteration:   25000000 =   500 *      50000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000018 
+computed eigenvalues: 0.000025 
+computed eigenvalues: 0.000033 
+eigV error: 9.8504e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 205.0039 
+#iteration:   22500000 =   450 *      50000 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000014 
+computed eigenvalues: 0.000018 
+computed eigenvalues: 0.000019 
+computed eigenvalues: 0.000022 
+eigV error: 9.4383e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 297.0578 
+#iteration:   32500000 =   650 *      50000 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000017 
+computed eigenvalues: 0.000019 
+computed eigenvalues: 0.000021 
+eigV error: 9.3640e-04 
+--------------------------------------------
+results from eigs: 
+running time 12.6841 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000050 
+computed eigenvalues: 0.000079 
+computed eigenvalues: 0.000117 
+eigV error: 3.8482e-11 
+
+
+========================= #samples =     100000 ============================
+nonzeros rate:     0.0003 
+--------------------------------------------
+results from CoD(sq): 
+running time 3256.8036 
+#iteration: 1000000000 = 10000 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000022 
+computed eigenvalues: 0.000101 
+computed eigenvalues: 0.001202 
+eigV error: 2.3792e-03 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 2438.4129 
+#iteration:  695000000 =  6950 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000024 
+computed eigenvalues: 0.000044 
+eigV error: 9.9787e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   4 
+running time 2973.1902 
+#iteration: 1000000000 = 10000 *     100000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000043 
+eigV error: 1.0040e-03 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 77.8464 
+#iteration:   20000000 =   200 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000024 
+computed eigenvalues: 0.000044 
+eigV error: 9.8995e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 70.9565 
+#iteration:   15000000 =   150 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000021 
+computed eigenvalues: 0.000040 
+eigV error: 8.9001e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 125.3509 
+#iteration:   30000000 =   300 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000022 
+computed eigenvalues: 0.000042 
+eigV error: 9.3822e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 119.7907 
+#iteration:   35000000 =   350 *     100000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000037 
+eigV error: 7.2086e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 171.6461 
+#iteration:   45000000 =   450 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000033 
+eigV error: 7.7748e-04 
+--------------------------------------------
+results from eigs: 
+running time 3.8233 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000029 
+computed eigenvalues: 0.000181 
+computed eigenvalues: 0.001201 
+eigV error: 1.4654e-13 
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0001 
+--------------------------------------------
+results from CoD(sq): 
+running time 17891.9630 
+#iteration: 5000000000 = 10000 *     500000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000014 
+computed eigenvalues: 0.000106 
+eigV error: 2.3566e-03 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 9946.9973 
+#iteration: 2725000000 =  5450 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000017 
+eigV error: 9.8655e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   5 
+running time 14729.6243 
+#iteration: 3450000000 =  6900 *     500000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000011 
+eigV error: 9.9284e-04 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 1014.2506 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000011 
+eigV error: 6.6904e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 1073.1838 
+#iteration:   75000000 =   150 *     500000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+eigV error: 5.9254e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 1341.6614 
+#iteration:  125000000 =   250 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000014 
+eigV error: 8.3940e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 1134.2467 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000011 
+eigV error: 8.2792e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 1642.8906 
+#iteration:  150000000 =   300 *     500000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000010 
+eigV error: 8.5802e-04 
+--------------------------------------------
+results from eigs: 
+running time 66.9745 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000158 
+computed eigenvalues: 0.000195 
+computed eigenvalues: 0.000350 
+eigV error: 1.4746e-11 
+
+
+========================= #samples =    1000000 ============================
+nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(sq): 
+running time 8092.6235 
+#iteration: 5400000000 =  5400 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000022 
+eigV error: 9.9200e-04 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 3954.4940 
+#iteration: 2900000000 =  2900 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000022 
+eigV error: 9.8555e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   5 
+running time 12806.2096 
+#iteration: 5300000000 =  5300 *    1000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000010 
+eigV error: 9.8567e-04 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 376.5547 
+#iteration:  100000000 =   100 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000018 
+eigV error: 8.1013e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 514.7489 
+#iteration:  100000000 =   100 *    1000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000011 
+eigV error: 5.7771e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 596.9015 
+#iteration:  150000000 =   150 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000017 
+eigV error: 7.8038e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 643.3163 
+#iteration:  150000000 =   150 *    1000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000010 
+eigV error: 7.4709e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 1047.6728 
+#iteration:  250000000 =   250 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000008 
+eigV error: 6.9839e-04 
+--------------------------------------------
+results from eigs: 
+running time 133.7760 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000029 
+computed eigenvalues: 0.000040 
+computed eigenvalues: 0.000281 
+eigV error: 1.4016e-12 
+
+
+========================= #samples =    5000000 ============================
+nonzeros rate:     0.0000 

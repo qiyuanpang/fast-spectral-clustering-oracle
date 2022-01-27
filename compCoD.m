@@ -102,7 +102,7 @@ for n_samples = sizes
 
     tic;
     for i = 1:repeat
-        [eigV, eigW] = eigs(L, kwant, 'smallestabs', 'Tolerance', tau);
+        [eigV, eigW] = eigs(L, kwant, 'smallestreal', 'Tolerance', tau);
     end
     timeE = toc/repeat; 
 

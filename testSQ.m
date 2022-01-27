@@ -5,7 +5,7 @@ sizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000]
 %sizes = [5000000]
 kwant = 5
 repeat = 1;
-what = "bin"
+what = "abs"
 
 % parameters for Chebyshev-Davidson method
 m = 5;
@@ -21,8 +21,8 @@ th = 0.3;
 a0 = 0.1;
 p = 1.5;
 
-ncores = 40
-parpool(ncores, 'IdleTimeout', 360);
+%ncores = 40
+%parpool(ncores, 'IdleTimeout', 360);
 
 batch = 50;
 fnorm = 'fro';
@@ -73,7 +73,7 @@ for n_samples = sizes
     
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_par(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, tau, batch);
+        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, tau, batch);
     end
     time = toc/repeat;
 
@@ -88,7 +88,7 @@ for n_samples = sizes
     
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_par(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, tau, batch);
+        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, tau, batch);
     end
     time = toc/repeat;
 
@@ -103,7 +103,7 @@ for n_samples = sizes
 
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_par_orth(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, tau, batch);
+        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, tau, batch);
     end
     time = toc/repeat;
 
@@ -119,7 +119,7 @@ for n_samples = sizes
     a = a0 + (b-a0)/20;
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_par_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m, a, b, a0, p, tau, batch);
+        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m, a, b, a0, p, tau, batch);
     end
     time = toc/repeat;
 
@@ -135,7 +135,7 @@ for n_samples = sizes
     %a = a0 + (b-a0)/20;
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_par_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m+2, a, b, a0, p, tau, batch);
+        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m+2, a, b, a0, p, tau, batch);
     end
     time = toc/repeat;
 
@@ -151,7 +151,7 @@ for n_samples = sizes
     %a = a0 + (b-a0)/20;
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_par_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
+        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
     end
     time = toc/repeat;
 
@@ -167,7 +167,7 @@ for n_samples = sizes
     %a = a0 + (b-a0)/20;
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_par_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m, a, b, a0, p, tau, batch);
+        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m, a, b, a0, p, tau, batch);
     end
     time = toc/repeat;
 
@@ -183,7 +183,7 @@ for n_samples = sizes
     %a = a0 + (b-a0)/20;
     tic;
     for i = 1:repeat
-        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_par_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
+        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
     end
     time = toc/repeat;
 

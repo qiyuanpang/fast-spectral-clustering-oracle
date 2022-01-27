@@ -1,0 +1,39 @@
+
+=================================================
+type:  abs  number of samples =  1000
+km time =  0.152
+RAND Index v1 =  0.87  v1 time =  0.005
+RAND Index v2 =  0.582  v1 time =  0.01
+v1 cl0 rate =  0.069 , v2 cl1 rate =  0.931
+v2 cl0 rate =  0.357 , v2 cl1 rate =  0.643
+km cl0 rate =  0.061 , km cl1 rate =  0.939
+
+=================================================
+type:  abs  number of samples =  5000
+km time =  0.036
+RAND Index v1 =  0.999  v1 time =  0.014
+RAND Index v2 =  0.5022  v1 time =  0.035
+v1 cl0 rate =  0.9992 , v2 cl1 rate =  0.0008
+v2 cl0 rate =  0.502 , v2 cl1 rate =  0.498
+km cl0 rate =  0.9998 , km cl1 rate =  0.0002
+
+=================================================
+type:  abs  number of samples =  10000
+km time =  0.071
+RAND Index v1 =  1.0  v1 time =  0.028
+RAND Index v2 =  0.594  v1 time =  0.069
+v1 cl0 rate =  0.9978 , v2 cl1 rate =  0.0022
+v2 cl0 rate =  0.5962 , v2 cl1 rate =  0.4038
+km cl0 rate =  0.9978 , km cl1 rate =  0.0022
+
+=================================================
+type:  abs  number of samples =  50000
+km time =  0.41
+RAND Index v1 =  0.99884  v1 time =  0.148
+RAND Index v2 =  0.5661  v1 time =  0.369
+v1 cl0 rate =  0.99926 , v2 cl1 rate =  0.00074
+v2 cl0 rate =  0.56568 , v2 cl1 rate =  0.43432
+km cl0 rate =  0.99958 , km cl1 rate =  0.00042
+
+=================================================
+type:  abs  number of samples =  100000

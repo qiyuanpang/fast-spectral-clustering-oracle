@@ -1,0 +1,61 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+     5000000
+
+
+kwant =
+
+    50
+
+
+what = 
+
+    "bin"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+        8000
+
+
+
+========================= #samples =    5000000 ============================
+# 1 converged in 140 steps, ritz(  1)=1.052135e-04, rnorm= 1.1688e-01
+# 2 converged in 222 steps, ritz(  2)=5.000478e-01, rnorm= 1.2360e-01
+# 3 converged in 989 steps, ritz(  3)=1.000898e-02, rnorm= 2.1077e-01
+# 4 converged in 1340 steps, ritz(  4)=1.674380e-02, rnorm= 2.0468e-01
+# 5 converged in 1350 steps, ritz(  5)=4.411450e-02, rnorm= 2.0709e-01
+# 6 converged in 1728 steps, ritz(  6)=6.422329e-03, rnorm= 2.1299e-01
+# 7 converged in 1728 steps, ritz(  7)=5.236103e-02, rnorm= 1.6622e-01
+# 8 converged in 1729 steps, ritz(  8)=7.550034e-02, rnorm= 2.0899e-01
+# 9 converged in 1729 steps, ritz(  9)=1.064909e-01, rnorm= 2.7543e-02
+# 10 converged in 1729 steps, ritz( 10)=1.314374e-01, rnorm= 1.4621e-02
+# 11 converged in 1730 steps, ritz( 11)=2.807543e-01, rnorm= 7.5604e-02
+# 12 converged in 1730 steps, ritz( 12)=3.157314e-01, rnorm= 1.3848e-01
+# 13 converged in 1945 steps, ritz( 13)=3.839839e-02, rnorm= 1.9678e-01
+# 14 converged in 2181 steps, ritz( 14)=4.313563e-03, rnorm= 2.0366e-01
+# 15 converged in 2231 steps, ritz( 15)=3.128417e-01, rnorm= 2.0656e-01
+# 16 converged in 2231 steps, ritz( 16)=3.714064e-01, rnorm= 3.9124e-02
+# 17 converged in 2231 steps, ritz( 17)=4.006947e-01, rnorm= 4.2870e-02
+# 18 converged in 2418 steps, ritz( 18)=4.486423e-03, rnorm= 2.0697e-01
+# 19 converged in 2418 steps, ritz( 19)=4.544580e-01, rnorm= 6.2552e-02
+# 20 converged in 2419 steps, ritz( 20)=4.915818e-01, rnorm= 1.8266e-01
+# 21 converged in 2419 steps, ritz( 21)=5.889810e-01, rnorm= 7.2176e-02
+# 22 converged in 2419 steps, ritz( 22)=6.292733e-01, rnorm= 1.9740e-01
+# 23 converged in 2690 steps, ritz( 23)=2.500465e-03, rnorm= 2.0416e-01

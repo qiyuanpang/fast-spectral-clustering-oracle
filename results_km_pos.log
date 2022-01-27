@@ -1,0 +1,39 @@
+
+=================================================
+type:  pos  number of samples =  1000
+km time =  0.121
+RAND Index v1 =  1.0  v1 time =  0.003
+RAND Index v2 =  0.748  v1 time =  0.007
+v1 cl0 rate =  0.051 , v2 cl1 rate =  0.949
+v2 cl0 rate =  0.303 , v2 cl1 rate =  0.697
+km cl0 rate =  0.051 , km cl1 rate =  0.949
+
+=================================================
+type:  pos  number of samples =  5000
+km time =  0.047
+RAND Index v1 =  0.999  v1 time =  0.017
+RAND Index v2 =  0.5196  v1 time =  0.02
+v1 cl0 rate =  0.9992 , v2 cl1 rate =  0.0008
+v2 cl0 rate =  0.5194 , v2 cl1 rate =  0.4806
+km cl0 rate =  0.9998 , km cl1 rate =  0.0002
+
+=================================================
+type:  pos  number of samples =  10000
+km time =  0.051
+RAND Index v1 =  1.0  v1 time =  0.027
+RAND Index v2 =  0.6974  v1 time =  0.074
+v1 cl0 rate =  0.9978 , v2 cl1 rate =  0.0022
+v2 cl0 rate =  0.6996 , v2 cl1 rate =  0.3004
+km cl0 rate =  0.9978 , km cl1 rate =  0.0022
+
+=================================================
+type:  pos  number of samples =  50000
+km time =  0.254
+RAND Index v1 =  0.99884  v1 time =  0.142
+RAND Index v2 =  0.5789  v1 time =  0.26
+v1 cl0 rate =  0.99926 , v2 cl1 rate =  0.00074
+v2 cl0 rate =  0.57848 , v2 cl1 rate =  0.42152
+km cl0 rate =  0.99958 , km cl1 rate =  0.00042
+
+=================================================
+type:  pos  number of samples =  100000

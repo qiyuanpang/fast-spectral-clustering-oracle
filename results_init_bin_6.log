@@ -1,0 +1,571 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 10
+
+     1000000     2000000     3000000     4000000
+
+
+kwant =
+
+     4
+
+
+what = 
+
+    "bin"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+        3000
+
+
+stepsize =
+
+    0.0200
+
+
+w =
+
+     1
+
+
+alpha =
+
+    0.9000
+
+
+inits =
+
+     2
+
+
+
+========================= #samples =       1000 ============================
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 1.6277e-08
+# 2 converged in 8 steps, ritz(  2)=1.000000e-01, rnorm= 4.1477e-10
+# 3 converged in 8 steps, ritz(  3)=8.547944e-01, rnorm= 5.2072e-08
+# 4 converged in 12 steps, ritz(  4)=1.000000e-01, rnorm= 7.9719e-11
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=12
+--------------------------------------------
+results from chdav: 
+running time 0.5234 
+#iteration:         12 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.754794 
+eigV error: 6.2555e-08 
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 1.0783e-08
+# 2 converged in 8 steps, ritz(  2)=1.000000e-01, rnorm= 4.6544e-12
+# 3 converged in 8 steps, ritz(  3)=8.902428e-01, rnorm= 1.7101e-08
+# 4 converged in 11 steps, ritz(  4)=1.000000e-01, rnorm= 2.4165e-10
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=11
+--------------------------------------------
+results from chdav(init): 
+running time 0.0263 
+#iteration:         11 
+computed eigenvalues: -0.000000 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.790243 
+eigV error: 2.2293e-08 
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 1.6163e-08
+# 2 converged in 8 steps, ritz(  2)=1.000000e-01, rnorm= 6.5930e-12
+# 3 converged in 8 steps, ritz(  3)=8.902428e-01, rnorm= 4.2738e-09
+# 4 converged in 11 steps, ritz(  4)=1.000000e-01, rnorm= 1.2428e-09
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=11
+--------------------------------------------
+results from chdav: 
+running time 0.0139 
+#iteration:         11 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.790243 
+eigV error: 1.8485e-08 
+
+
+========================= #samples =       5000 ============================
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 7.3160e-08
+# 2 converged in 9 steps, ritz(  2)=1.000000e-01, rnorm= 8.3227e-13
+# 3 converged in 9 steps, ritz(  3)=6.885622e-01, rnorm= 7.5897e-09
+# 4 converged in 10 steps, ritz(  4)=9.034626e-01, rnorm= 2.6636e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=10
+--------------------------------------------
+results from chdav: 
+running time 0.0365 
+#iteration:         10 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.588562 
+computed eigenvalues: 0.803463 
+eigV error: 2.4139e-07 
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 1.5107e-08
+# 2 converged in 8 steps, ritz(  2)=1.000000e-01, rnorm= 1.5132e-07
+# 3 converged in 8 steps, ritz(  3)=6.885622e-01, rnorm= 1.2611e-09
+# 4 converged in 9 steps, ritz(  4)=9.050790e-01, rnorm= 3.2288e-07
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=9
+--------------------------------------------
+results from chdav(init): 
+running time 0.0476 
+#iteration:          9 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.588562 
+computed eigenvalues: 0.805079 
+eigV error: 3.1144e-07 
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 6.4413e-08
+# 2 converged in 9 steps, ritz(  2)=1.000000e-01, rnorm= 4.4544e-13
+# 3 converged in 9 steps, ritz(  3)=6.885622e-01, rnorm= 5.7035e-09
+# 4 converged in 12 steps, ritz(  4)=1.000000e-01, rnorm= 1.6556e-08
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=12
+--------------------------------------------
+results from chdav: 
+running time 0.0465 
+#iteration:         12 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.588562 
+eigV error: 9.4014e-08 
+
+
+========================= #samples =      10000 ============================
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 8.1294e-09
+# 2 converged in 9 steps, ritz(  2)=1.000000e-01, rnorm= 2.8437e-10
+# 3 converged in 9 steps, ritz(  3)=5.794824e-01, rnorm= 1.1137e-10
+# 4 converged in 10 steps, ritz(  4)=6.632752e-01, rnorm= 4.8847e-09
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=10
+--------------------------------------------
+results from chdav: 
+running time 0.0811 
+#iteration:         10 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.479482 
+computed eigenvalues: 0.563275 
+eigV error: 1.0637e-08 
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 9.9858e-08
+# 2 converged in 9 steps, ritz(  2)=1.000000e-01, rnorm= 4.0715e-10
+# 3 converged in 9 steps, ritz(  3)=5.794824e-01, rnorm= 1.2462e-08
+# 4 converged in 11 steps, ritz(  4)=6.632752e-01, rnorm= 1.1040e-08
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=11
+--------------------------------------------
+results from chdav(init): 
+running time 0.0847 
+#iteration:         11 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.479482 
+computed eigenvalues: 0.563275 
+eigV error: 1.1349e-07 
+# 1 converged in 4 steps, ritz(  1)=1.000000e-01, rnorm= 5.4723e-08
+# 2 converged in 9 steps, ritz(  2)=1.000000e-01, rnorm= 4.1397e-11
+# 3 converged in 9 steps, ritz(  3)=5.794824e-01, rnorm= 6.3202e-09
+# 4 converged in 10 steps, ritz(  4)=6.632752e-01, rnorm= 1.1445e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=10
+--------------------------------------------
+results from chdav: 
+running time 0.0717 
+#iteration:         10 
+computed eigenvalues: -0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.479482 
+computed eigenvalues: 0.563275 
+eigV error: 1.2845e-06 
+
+
+========================= #samples =      50000 ============================
+# 1 converged in 5 steps, ritz(  1)=1.000000e-01, rnorm= 2.6455e-07
+# 2 converged in 16 steps, ritz(  2)=1.000000e-01, rnorm= 1.0939e-08
+# 3 converged in 18 steps, ritz(  3)=2.332428e-01, rnorm= 8.9746e-07
+# 4 converged in 19 steps, ritz(  4)=2.367122e-01, rnorm= 2.9468e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=19
+--------------------------------------------
+results from chdav: 
+running time 1.6670 
+#iteration:         19 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.133243 
+computed eigenvalues: 0.136712 
+eigV error: 2.7163e-06 
+# 1 converged in 5 steps, ritz(  1)=1.000000e-01, rnorm= 2.1357e-07
+# 2 converged in 15 steps, ritz(  2)=1.000000e-01, rnorm= 8.6860e-07
+# 3 converged in 18 steps, ritz(  3)=2.332428e-01, rnorm= 1.9623e-07
+# 4 converged in 20 steps, ritz(  4)=2.367122e-01, rnorm= 1.9782e-07
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=20
+--------------------------------------------
+results from chdav(init): 
+running time 1.3928 
+#iteration:         20 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.133243 
+computed eigenvalues: 0.136712 
+eigV error: 2.5941e-06 
+# 1 converged in 5 steps, ritz(  1)=1.000000e-01, rnorm= 4.2857e-07
+# 2 converged in 15 steps, ritz(  2)=1.000000e-01, rnorm= 7.9707e-07
+# 3 converged in 17 steps, ritz(  3)=2.332428e-01, rnorm= 3.9185e-07
+# 4 converged in 19 steps, ritz(  4)=2.367122e-01, rnorm= 7.6923e-08
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=19
+--------------------------------------------
+results from chdav: 
+running time 1.4998 
+#iteration:         19 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.133243 
+computed eigenvalues: 0.136712 
+eigV error: 2.7389e-06 
+
+
+========================= #samples =     100000 ============================
+# 1 converged in 7 steps, ritz(  1)=1.000000e-01, rnorm= 3.9681e-07
+# 2 converged in 15 steps, ritz(  2)=1.209065e-01, rnorm= 1.0782e-06
+# 3 converged in 24 steps, ritz(  3)=1.000000e-01, rnorm= 4.1734e-07
+# 4 converged in 24 steps, ritz(  4)=1.374212e-01, rnorm= 1.2004e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=24
+--------------------------------------------
+results from chdav: 
+running time 5.1566 
+#iteration:         24 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.020906 
+computed eigenvalues: 0.037421 
+eigV error: 5.3098e-06 
+# 1 converged in 7 steps, ritz(  1)=1.000000e-01, rnorm= 3.5203e-07
+# 2 converged in 15 steps, ritz(  2)=1.209065e-01, rnorm= 1.1755e-06
+# 3 converged in 23 steps, ritz(  3)=1.000000e-01, rnorm= 8.4357e-07
+# 4 converged in 23 steps, ritz(  4)=1.374212e-01, rnorm= 5.9737e-07
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=23
+--------------------------------------------
+results from chdav(init): 
+running time 4.1795 
+#iteration:         23 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.020906 
+computed eigenvalues: 0.037421 
+eigV error: 6.9365e-06 
+# 1 converged in 7 steps, ritz(  1)=1.000000e-01, rnorm= 5.2541e-07
+# 2 converged in 16 steps, ritz(  2)=1.209065e-01, rnorm= 1.2720e-06
+# 3 converged in 18 steps, ritz(  3)=1.374212e-01, rnorm= 8.7118e-07
+# 4 converged in 25 steps, ritz(  4)=1.000000e-01, rnorm= 6.9591e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=25
+--------------------------------------------
+results from chdav: 
+running time 4.4054 
+#iteration:         25 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.020906 
+computed eigenvalues: 0.037421 
+eigV error: 7.6577e-06 
+
+
+========================= #samples =     500000 ============================
+# 1 converged in 29 steps, ritz(  1)=1.000000e-01, rnorm= 1.3959e-06
+# 2 converged in 41 steps, ritz(  2)=1.001787e-01, rnorm= 1.3987e-06
+# 3 converged in 42 steps, ritz(  3)=1.003897e-01, rnorm= 1.0383e-06
+# 4 converged in 57 steps, ritz(  4)=1.015948e-01, rnorm= 1.3289e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=57
+--------------------------------------------
+results from chdav: 
+running time 109.9224 
+#iteration:         57 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000179 
+computed eigenvalues: 0.000390 
+computed eigenvalues: 0.001595 
+eigV error: 1.2919e-05 
+# 1 converged in 29 steps, ritz(  1)=1.000000e-01, rnorm= 1.2111e-06
+# 2 converged in 41 steps, ritz(  2)=1.001787e-01, rnorm= 8.6079e-07
+# 3 converged in 45 steps, ritz(  3)=1.003897e-01, rnorm= 8.8141e-07
+# 4 converged in 57 steps, ritz(  4)=1.015948e-01, rnorm= 1.3782e-06
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=57
+--------------------------------------------
+results from chdav(init): 
+running time 93.9317 
+#iteration:         57 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000179 
+computed eigenvalues: 0.000390 
+computed eigenvalues: 0.001595 
+eigV error: 1.0990e-05 
+# 1 converged in 30 steps, ritz(  1)=1.000000e-01, rnorm= 1.0716e-06
+# 2 converged in 42 steps, ritz(  2)=1.001787e-01, rnorm= 9.7367e-07
+# 3 converged in 43 steps, ritz(  3)=1.003897e-01, rnorm= 1.0708e-06
+# 4 converged in 56 steps, ritz(  4)=1.015948e-01, rnorm= 1.2766e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=56
+--------------------------------------------
+results from chdav: 
+running time 107.1134 
+#iteration:         56 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000179 
+computed eigenvalues: 0.000390 
+computed eigenvalues: 0.001595 
+eigV error: 1.0977e-05 
+
+
+========================= #samples =    1000000 ============================
+# 1 converged in 24 steps, ritz(  1)=1.000000e-01, rnorm= 1.2866e-06
+# 2 converged in 60 steps, ritz(  2)=1.000755e-01, rnorm= 1.2680e-06
+# 3 converged in 65 steps, ritz(  3)=1.002715e-01, rnorm= 1.1870e-06
+# 4 converged in 67 steps, ritz(  4)=1.004890e-01, rnorm= 1.2274e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=67
+--------------------------------------------
+results from chdav: 
+running time 338.7215 
+#iteration:         67 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000076 
+computed eigenvalues: 0.000271 
+computed eigenvalues: 0.000489 
+eigV error: 1.2403e-05 
+# 1 converged in 30 steps, ritz(  1)=1.000000e-01, rnorm= 1.2523e-06
+# 2 converged in 55 steps, ritz(  2)=1.000755e-01, rnorm= 1.2873e-06
+# 3 converged in 62 steps, ritz(  3)=1.002730e-01, rnorm= 1.3236e-06
+# 4 converged in 66 steps, ritz(  4)=1.004890e-01, rnorm= 9.1363e-07
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=66
+--------------------------------------------
+results from chdav(init): 
+running time 297.8626 
+#iteration:         66 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000076 
+computed eigenvalues: 0.000273 
+computed eigenvalues: 0.000489 
+eigV error: 1.2029e-05 
+# 1 converged in 21 steps, ritz(  1)=1.000000e-01, rnorm= 1.3067e-06
+# 2 converged in 60 steps, ritz(  2)=1.000755e-01, rnorm= 1.3644e-06
+# 3 converged in 65 steps, ritz(  3)=1.002730e-01, rnorm= 1.2744e-06
+# 4 converged in 67 steps, ritz(  4)=1.004890e-01, rnorm= 6.1012e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=67
+--------------------------------------------
+results from chdav: 
+running time 326.9741 
+#iteration:         67 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000076 
+computed eigenvalues: 0.000273 
+computed eigenvalues: 0.000489 
+eigV error: 1.1771e-05 
+
+
+========================= #samples =    2000000 ============================
+# 1 converged in 23 steps, ritz(  1)=1.000000e-01, rnorm= 1.1822e-06
+# 2 converged in 68 steps, ritz(  2)=1.000062e-01, rnorm= 1.1979e-06
+# 3 converged in 70 steps, ritz(  3)=1.001527e-01, rnorm= 6.5642e-07
+# 4 converged in 71 steps, ritz(  4)=1.001935e-01, rnorm= 1.3780e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=71
+--------------------------------------------
+results from chdav: 
+running time 1105.2654 
+#iteration:         71 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000153 
+computed eigenvalues: 0.000193 
+eigV error: 1.1350e-05 
+# 1 converged in 22 steps, ritz(  1)=1.000000e-01, rnorm= 1.4026e-06
+# 2 converged in 66 steps, ritz(  2)=1.000062e-01, rnorm= 9.5019e-07
+# 3 converged in 69 steps, ritz(  3)=1.001527e-01, rnorm= 1.1993e-06
+# 4 converged in 73 steps, ritz(  4)=1.001935e-01, rnorm= 8.8943e-07
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=73
+--------------------------------------------
+results from chdav(init): 
+running time 1073.5527 
+#iteration:         73 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000153 
+computed eigenvalues: 0.000193 
+eigV error: 1.1281e-05 
+# 1 converged in 22 steps, ritz(  1)=1.000000e-01, rnorm= 1.2185e-06
+# 2 converged in 69 steps, ritz(  2)=1.000062e-01, rnorm= 7.9263e-07
+# 3 converged in 70 steps, ritz(  3)=1.001527e-01, rnorm= 8.5095e-07
+# 4 converged in 71 steps, ritz(  4)=1.001935e-01, rnorm= 8.8398e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=71
+--------------------------------------------
+results from chdav: 
+running time 1087.0643 
+#iteration:         71 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000153 
+computed eigenvalues: 0.000193 
+eigV error: 9.5028e-06 
+
+
+========================= #samples =    3000000 ============================
+# 1 converged in 19 steps, ritz(  1)=1.000000e-01, rnorm= 1.4058e-06
+# 2 converged in 52 steps, ritz(  2)=1.000808e-01, rnorm= 1.3001e-06
+# 3 converged in 54 steps, ritz(  3)=1.002284e-01, rnorm= 9.0409e-07
+# 4 converged in 55 steps, ritz(  4)=1.004278e-01, rnorm= 1.1687e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=55
+--------------------------------------------
+results from chdav: 
+running time 1676.9973 
+#iteration:         55 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000081 
+computed eigenvalues: 0.000228 
+computed eigenvalues: 0.000428 
+eigV error: 1.2071e-05 
+# 1 converged in 14 steps, ritz(  1)=1.000000e-01, rnorm= 1.3466e-06
+# 2 converged in 52 steps, ritz(  2)=1.000808e-01, rnorm= 7.1613e-07
+# 3 converged in 53 steps, ritz(  3)=1.002284e-01, rnorm= 1.2354e-06
+# 4 converged in 57 steps, ritz(  4)=1.004278e-01, rnorm= 1.2021e-06
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=57
+--------------------------------------------
+results from chdav(init): 
+running time 1593.7338 
+#iteration:         57 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000081 
+computed eigenvalues: 0.000228 
+computed eigenvalues: 0.000428 
+eigV error: 1.1487e-05 
+# 1 converged in 16 steps, ritz(  1)=1.000000e-01, rnorm= 1.2198e-06
+# 2 converged in 53 steps, ritz(  2)=1.000808e-01, rnorm= 7.5947e-07
+# 3 converged in 54 steps, ritz(  3)=1.002284e-01, rnorm= 1.4136e-06
+# 4 converged in 58 steps, ritz(  4)=1.004278e-01, rnorm= 8.5712e-07
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=58
+--------------------------------------------
+results from chdav: 
+running time 1672.8561 
+#iteration:         58 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000081 
+computed eigenvalues: 0.000228 
+computed eigenvalues: 0.000428 
+eigV error: 1.0932e-05 
+
+
+========================= #samples =    4000000 ============================
+# 1 converged in 73 steps, ritz(  1)=1.000000e-01, rnorm= 9.3230e-07
+# 2 converged in 215 steps, ritz(  2)=1.000009e-01, rnorm= 1.1660e-06
+# 3 converged in 369 steps, ritz(  3)=1.000007e-01, rnorm= 1.3918e-06
+# 4 converged in 655 steps, ritz(  4)=1.000006e-01, rnorm= 1.1921e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=655
+--------------------------------------------
+results from chdav: 
+running time 36764.3893 
+#iteration:        655 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+eigV error: 1.1818e-05 
+# 1 converged in 88 steps, ritz(  1)=1.000000e-01, rnorm= 1.4136e-06
+# 2 converged in 733 steps, ritz(  2)=1.000006e-01, rnorm= 1.4510e-06
+# 3 converged in 733 steps, ritz(  3)=1.000010e-01, rnorm= 1.3324e-06
+# 4 converged in 737 steps, ritz(  4)=1.000022e-01, rnorm= 1.3934e-06
+ parameters used for the calculation:
+ polym=9,  vmax=20, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=20,  #iter=737
+--------------------------------------------
+results from chdav(init): 
+running time 38854.5528 
+#iteration:        737 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+eigV error: 1.3983e-05 
+# 1 converged in 68 steps, ritz(  1)=1.000000e-01, rnorm= 1.3471e-06
+# 2 converged in 252 steps, ritz(  2)=1.000009e-01, rnorm= 1.4651e-06
+# 3 converged in 334 steps, ritz(  3)=1.000008e-01, rnorm= 1.4107e-06
+# 4 converged in 334 steps, ritz(  4)=1.000023e-01, rnorm= 1.2863e-06
+ parameters used for the calculation:
+ polym=9,  vmax=50, tol=1.000000e-06
+ nconv=4,  #mat-vect-prod=50,  #iter=334
+--------------------------------------------
+results from chdav: 
+running time 18640.5185 
+#iteration:        334 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+eigV error: 1.3789e-05 

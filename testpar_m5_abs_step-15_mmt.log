@@ -270,3 +270,14 @@ computed eigenvalues: 0.089573
 computed eigenvalues: 0.091519 
 computed eigenvalues: 0.090908 
 eigV error: 2.1760e-01 
+[Warning: 1 of the 3 requested eigenvalues converged. Eigenvalues that did not
+converge are NaN.] 
+[> In eigs (line 176)
+In testPar (line 126)] 
+--------------------------------------------
+results from eigs: 
+running time 16230.0985 
+computed eigenvalues: 0.000000 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+eigV error:        NaN 

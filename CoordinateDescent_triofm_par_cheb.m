@@ -1,4 +1,4 @@
-function [eigvalues, eigvectors, iter] = CoordinateDescent_triofm_par(A, k, gamma, nonzerocols, itermax, V, w, alpha, tol, batch)
+function [eigvalues, eigvectors, iter] = CoordinateDescent_triofm_par_cheb(A, k, gamma, nonzerocols, itermax, V, w, alpha, m, a, b, a0, p, tol, batch)
     [N,~] = size(A);
     K = V'*V;
     r = zeros(1,k);
@@ -6,7 +6,7 @@ function [eigvalues, eigvectors, iter] = CoordinateDescent_triofm_par(A, k, gamm
     V0 = V;
     iter = 1;
     dU = zeros(N,k);
-    AV0 = A*V0;
+    AV0 = chebfilter2(A, V0, m, a, b, a0, p);
     G = zeros(k,k,N);
     dr = zeros(N,k);
     conv = 0;
@@ -26,7 +26,6 @@ function [eigvalues, eigvectors, iter] = CoordinateDescent_triofm_par(A, k, gamm
         K0 = K;
         V = V*Dinv;
         V0 = V;
-        AV0 = A*V0;
         r = zeros(1,k);
         if mod(iter, batch) == 0
             [V1,~] = qr(V,0);
@@ -39,6 +38,7 @@ function [eigvalues, eigvectors, iter] = CoordinateDescent_triofm_par(A, k, gamm
                 break
             end
         end
+        AV0 = chebfilter2(A, V0, m, a, b, a0, p);
     end
     if conv == 0
         [V,~] = qr(V,0);

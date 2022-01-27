@@ -1,0 +1,72 @@
+
+=================================================
+type:  bin  number of samples =  1000
+km time =  0.13
+RAND Index v1 =  0.517  v1 time =  0.004
+RAND Index v2 =  0.528  v1 time =  0.006
+v1 cl0 rate =  0.7 , v2 cl1 rate =  0.3
+v2 cl0 rate =  0.345 , v2 cl1 rate =  0.655
+km cl0 rate =  0.817 , km cl1 rate =  0.183
+
+=================================================
+type:  bin  number of samples =  5000
+km time =  0.116
+RAND Index v1 =  0.999  v1 time =  0.029
+RAND Index v2 =  0.5012  v1 time =  0.034
+v1 cl0 rate =  0.9992 , v2 cl1 rate =  0.0008
+v2 cl0 rate =  0.5014 , v2 cl1 rate =  0.4986
+km cl0 rate =  0.9998 , km cl1 rate =  0.0002
+
+=================================================
+type:  bin  number of samples =  10000
+km time =  0.093
+RAND Index v1 =  1.0  v1 time =  0.028
+RAND Index v2 =  0.5734  v1 time =  0.054
+v1 cl0 rate =  0.9981 , v2 cl1 rate =  0.0019
+v2 cl0 rate =  0.5715 , v2 cl1 rate =  0.4285
+km cl0 rate =  0.9981 , km cl1 rate =  0.0019
+
+=================================================
+type:  bin  number of samples =  50000
+km time =  0.118
+RAND Index v1 =  1.0  v1 time =  0.147
+RAND Index v2 =  0.55434  v1 time =  0.426
+v1 cl0 rate =  0.99714 , v2 cl1 rate =  0.00286
+v2 cl0 rate =  0.55148 , v2 cl1 rate =  0.44852
+km cl0 rate =  0.99714 , km cl1 rate =  0.00286
+
+=================================================
+type:  bin  number of samples =  100000
+km time =  0.136
+RAND Index v1 =  1.0  v1 time =  0.292
+RAND Index v2 =  0.58748  v1 time =  1.014
+v1 cl0 rate =  0.99974 , v2 cl1 rate =  0.00026
+v2 cl0 rate =  0.58774 , v2 cl1 rate =  0.41226
+km cl0 rate =  0.99974 , km cl1 rate =  0.00026
+
+=================================================
+type:  bin  number of samples =  500000
+km time =  0.592
+RAND Index v1 =  1.0  v1 time =  1.528
+RAND Index v2 =  0.548534  v1 time =  6.364
+v1 cl0 rate =  0.962606 , v2 cl1 rate =  0.037394
+v2 cl0 rate =  0.51114 , v2 cl1 rate =  0.48886
+km cl0 rate =  0.962606 , km cl1 rate =  0.037394
+
+=================================================
+type:  bin  number of samples =  1000000
+km time =  0.908
+RAND Index v1 =  1.0  v1 time =  3.445
+RAND Index v2 =  0.511705  v1 time =  17.233
+v1 cl0 rate =  0.996237 , v2 cl1 rate =  0.003763
+v2 cl0 rate =  0.507942 , v2 cl1 rate =  0.492058
+km cl0 rate =  0.996237 , km cl1 rate =  0.003763
+
+=================================================
+type:  bin  number of samples =  5000000
+km time =  8.322
+RAND Index v1 =  1.0  v1 time =  19.993
+RAND Index v2 =  0.6012626  v1 time =  179.803
+v1 cl0 rate =  0.9991776 , v2 cl1 rate =  0.0008224
+v2 cl0 rate =  0.6004402 , v2 cl1 rate =  0.3995598
+km cl0 rate =  0.9991776 , km cl1 rate =  0.0008224

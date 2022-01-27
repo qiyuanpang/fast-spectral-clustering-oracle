@@ -1,0 +1,413 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 8
+
+     1000000     5000000
+
+
+kwant =
+
+     5
+
+
+what = 
+
+    "pos"
+
+
+lambda =
+
+   1.0000e-04
+
+
+tau =
+
+   1.0000e-03
+
+
+itermax =
+
+       10000
+
+
+stepsize =
+
+    0.0200
+
+
+w =
+
+     1
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0704 
+--------------------------------------------
+results from CoD(sq): 
+running time 2.4786 
+#iteration:    3500000 =  3500 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098678 
+eigV error: 9.7162e-04 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 4.4832 
+#iteration:     250000 =   250 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098673 
+eigV error: 7.0716e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 0.6739 
+#iteration:    1500000 =  1500 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098679 
+eigV error: 9.9305e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 3.7186 
+#iteration:     200000 =   200 *       1000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+computed eigenvalues: 0.065468 
+computed eigenvalues: 0.072745 
+computed eigenvalues: 0.098672 
+eigV error: 5.7208e-04 
+
+
+========================= #samples =       5000 ============================
+nonzeros rate:     0.0041 
+--------------------------------------------
+results from CoD(sq): 
+running time 5.2335 
+#iteration:   20250000 =  4050 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000004 
+eigV error: 9.8740e-04 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 2.4381 
+#iteration:     500000 =   100 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+eigV error: 5.5060e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 2.6651 
+#iteration:    9000000 =  1800 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+eigV error: 9.3348e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 2.3699 
+#iteration:     500000 =   100 *       5000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+eigV error: 4.2327e-04 
+
+
+========================= #samples =      10000 ============================
+nonzeros rate:     0.0049 
+--------------------------------------------
+results from CoD(sq): 
+running time 44.5750 
+#iteration:  100000000 = 10000 *      10000 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000014 
+computed eigenvalues: 0.000023 
+computed eigenvalues: 0.000035 
+eigV error: 1.3085e-03 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 18.9530 
+#iteration:    2500000 =   250 *      10000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000029 
+eigV error: 8.4464e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 23.1701 
+#iteration:   51500000 =  5150 *      10000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000016 
+computed eigenvalues: 0.000032 
+eigV error: 9.8539e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 19.2371 
+#iteration:    2500000 =   250 *      10000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000028 
+eigV error: 7.4485e-04 
+
+
+========================= #samples =      50000 ============================
+nonzeros rate:     0.0013 
+--------------------------------------------
+results from CoD(sq): 
+running time 413.3009 
+#iteration:  500000000 = 10000 *      50000 
+computed eigenvalues: 0.000032 
+computed eigenvalues: 0.000042 
+computed eigenvalues: 0.000056 
+computed eigenvalues: 0.000089 
+computed eigenvalues: 0.000103 
+eigV error: 2.2802e-03 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 237.7873 
+#iteration:   20000000 =   400 *      50000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000018 
+computed eigenvalues: 0.000025 
+computed eigenvalues: 0.000033 
+eigV error: 9.8210e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 373.3483 
+#iteration:  452500000 =  9050 *      50000 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000019 
+computed eigenvalues: 0.000025 
+computed eigenvalues: 0.000034 
+eigV error: 9.9586e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 211.2460 
+#iteration:   20000000 =   400 *      50000 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000016 
+computed eigenvalues: 0.000021 
+computed eigenvalues: 0.000028 
+eigV error: 8.8510e-04 
+
+
+========================= #samples =     100000 ============================
+nonzeros rate:     0.0003 
+--------------------------------------------
+results from CoD(sq): 
+running time 378.3842 
+#iteration: 1000000000 = 10000 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000029 
+computed eigenvalues: 0.000057 
+eigV error: 1.2831e-03 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 175.6718 
+#iteration:   25000000 =   250 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000020 
+computed eigenvalues: 0.000040 
+eigV error: 8.9039e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 235.4658 
+#iteration:  525000000 =  5250 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000024 
+computed eigenvalues: 0.000044 
+eigV error: 9.9381e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 151.3407 
+#iteration:   25000000 =   250 *     100000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000017 
+computed eigenvalues: 0.000037 
+eigV error: 7.9573e-04 
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0001 
+--------------------------------------------
+results from CoD(sq): 
+running time 6977.2304 
+#iteration: 4675000000 =  9350 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000017 
+eigV error: 9.9978e-04 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 2126.1960 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000014 
+eigV error: 8.4997e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 2878.6126 
+#iteration: 2050000000 =  4100 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000017 
+eigV error: 9.8816e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 1923.9234 
+#iteration:  100000000 =   200 *     500000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000012 
+eigV error: 7.5077e-04 
+
+
+========================= #samples =    1000000 ============================
+nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(sq): 
+running time 3165.9166 
+#iteration: 5000000000 =  5000 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000022 
+eigV error: 9.8866e-04 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 1038.5703 
+#iteration:  100000000 =   100 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000021 
+eigV error: 9.7547e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 1308.4832 
+#iteration: 2200000000 =  2200 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000022 
+eigV error: 9.7644e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 984.2486 
+#iteration:  100000000 =   100 *    1000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000019 
+eigV error: 8.9058e-04 
+
+
+========================= #samples =    5000000 ============================
+nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(sq): 
+running time 124661.5163 
+#iteration: 33500000000 =  6700 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000035 
+eigV error: 9.9579e-04 
+--------------------------------------------
+results from CoD(sq, shift & invert): 
+running time 31052.4581 
+#iteration:  750000000 =   150 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000031 
+eigV error: 8.8823e-04 
+--------------------------------------------
+results from CoD(sq, mmt): 
+running time 47644.5353 
+#iteration: 14750000000 =  2950 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000035 
+eigV error: 9.8672e-04 
+--------------------------------------------
+results from CoD(sq, mmt, shift & invert): 
+running time 27785.1958 
+#iteration:  750000000 =   150 *    5000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000029 
+eigV error: 8.3919e-04 

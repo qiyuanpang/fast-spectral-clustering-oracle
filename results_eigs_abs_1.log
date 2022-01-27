@@ -1,0 +1,258 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+      500000     1000000     5000000
+
+
+kwant =
+
+    50
+
+
+what = 
+
+    "abs"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+        9000
+
+
+
+========================= #samples =     500000 ============================
+# 1 converged in 395 steps, ritz(  1)=1.792448e-05, rnorm= 9.3224e-03
+# 2 converged in 522 steps, ritz(  2)=4.711484e-03, rnorm= 1.7306e-02
+# 3 converged in 866 steps, ritz(  3)=1.501458e-04, rnorm= 2.1792e-02
+# 4 converged in 931 steps, ritz(  4)=4.496345e-03, rnorm= 2.2229e-02
+# 5 converged in 1222 steps, ritz(  5)=1.481780e-03, rnorm= 2.2754e-02
+# 6 converged in 1522 steps, ritz(  6)=9.897964e-05, rnorm= 2.1126e-02
+# 7 converged in 1522 steps, ritz(  7)=1.048928e-02, rnorm= 1.1650e-02
+# 8 converged in 1522 steps, ritz(  8)=1.262402e-02, rnorm= 4.7196e-03
+# 9 converged in 1523 steps, ritz(  9)=1.302992e-02, rnorm= 1.1160e-02
+# 10 converged in 1774 steps, ritz( 10)=4.689422e-03, rnorm= 2.2177e-02
+# 11 converged in 1774 steps, ritz( 11)=1.744447e-02, rnorm= 1.5755e-02
+# 12 converged in 1774 steps, ritz( 12)=1.793815e-02, rnorm= 7.1823e-03
+# 13 converged in 2041 steps, ritz( 13)=4.935372e-05, rnorm= 2.2366e-02
+# 14 converged in 2391 steps, ritz( 14)=1.280574e-02, rnorm= 2.2234e-02
+# 15 converged in 2702 steps, ritz( 15)=3.574295e-05, rnorm= 1.9990e-02
+# 16 converged in 2738 steps, ritz( 16)=1.703093e-02, rnorm= 2.2340e-02
+# 17 converged in 3007 steps, ritz( 17)=1.896973e-02, rnorm= 2.1869e-02
+# 18 converged in 3031 steps, ritz( 18)=2.099037e-02, rnorm= 2.2998e-02
+# 19 converged in 3031 steps, ritz( 19)=2.176095e-02, rnorm= 2.1251e-02
+# 20 converged in 3031 steps, ritz( 20)=2.269600e-02, rnorm= 1.6400e-02
+# 21 converged in 3032 steps, ritz( 21)=2.453895e-02, rnorm= 1.7522e-02
+# 22 converged in 3356 steps, ritz( 22)=2.331304e-02, rnorm= 2.2451e-02
+# 23 converged in 3356 steps, ritz( 23)=2.690080e-02, rnorm= 1.5586e-02
+# 24 converged in 3741 steps, ritz( 24)=2.573521e-05, rnorm= 2.2638e-02
+# 25 converged in 4008 steps, ritz( 25)=2.167266e-02, rnorm= 2.0578e-02
+# 26 converged in 4023 steps, ritz( 26)=2.403421e-02, rnorm= 2.2007e-02
+# 27 converged in 4055 steps, ritz( 27)=2.664675e-02, rnorm= 2.3009e-02
+# 28 converged in 4055 steps, ritz( 28)=2.828755e-02, rnorm= 7.4290e-03
+# 29 converged in 4055 steps, ritz( 29)=3.119204e-02, rnorm= 1.5927e-02
+# 30 converged in 4056 steps, ritz( 30)=3.168969e-02, rnorm= 2.6557e-03
+# 31 converged in 4460 steps, ritz( 31)=2.117910e-02, rnorm= 2.3018e-02
+# 32 converged in 4670 steps, ritz( 32)=2.252475e-02, rnorm= 2.3015e-02
+# 33 converged in 4928 steps, ritz( 33)=3.800047e-05, rnorm= 2.2793e-02
+# 34 converged in 5126 steps, ritz( 34)=2.412341e-02, rnorm= 2.2167e-02
+# 35 converged in 5126 steps, ritz( 35)=2.702337e-02, rnorm= 8.6442e-03
+# 36 converged in 5132 steps, ritz( 36)=3.132510e-02, rnorm= 2.2687e-02
+# 37 converged in 5589 steps, ritz( 37)=2.275139e-02, rnorm= 2.2864e-02
+# 38 converged in 5824 steps, ritz( 38)=2.443301e-02, rnorm= 2.2956e-02
+# 39 converged in 5887 steps, ritz( 39)=2.724209e-02, rnorm= 1.9785e-02
+# 40 converged in 5887 steps, ritz( 40)=3.166370e-02, rnorm= 2.2005e-02
+# 41 converged in 5887 steps, ritz( 41)=3.245845e-02, rnorm= 1.3807e-02
+# 42 converged in 5888 steps, ritz( 42)=3.332416e-02, rnorm= 9.6079e-03
+# 43 converged in 5888 steps, ritz( 43)=3.413572e-02, rnorm= 6.3258e-03
+# 44 converged in 5888 steps, ritz( 44)=3.588021e-02, rnorm= 1.2924e-02
+# 45 converged in 5889 steps, ritz( 45)=3.649502e-02, rnorm= 5.0353e-03
+# 46 converged in 6070 steps, ritz( 46)=1.241651e-04, rnorm= 2.1237e-02
+# 47 converged in 6316 steps, ritz( 47)=2.437669e-02, rnorm= 2.2331e-02
+# 48 converged in 6862 steps, ritz( 48)=2.458432e-02, rnorm= 1.9087e-02
+# 49 converged in 6862 steps, ritz( 49)=2.828325e-02, rnorm= 9.7730e-03
+# 50 converged in 6895 steps, ritz( 50)=3.197676e-02, rnorm= 2.1500e-02
+ parameters used for the calculation:
+ polym=15,  vmax=900, tol=1.000000e-06
+ nconv=50,  #mat-vect-prod=900,  #iter=6895
+computed eigenvalues: 0.000018 
+computed eigenvalues: 0.000026 
+computed eigenvalues: 0.000036 
+computed eigenvalues: 0.000038 
+computed eigenvalues: 0.000049 
+computed eigenvalues: 0.000099 
+computed eigenvalues: 0.000124 
+computed eigenvalues: 0.000150 
+computed eigenvalues: 0.001482 
+computed eigenvalues: 0.004496 
+computed eigenvalues: 0.004689 
+computed eigenvalues: 0.004711 
+computed eigenvalues: 0.010489 
+computed eigenvalues: 0.012624 
+computed eigenvalues: 0.012806 
+computed eigenvalues: 0.013030 
+computed eigenvalues: 0.017031 
+computed eigenvalues: 0.017444 
+computed eigenvalues: 0.017938 
+computed eigenvalues: 0.018970 
+computed eigenvalues: 0.020990 
+computed eigenvalues: 0.021179 
+computed eigenvalues: 0.021673 
+computed eigenvalues: 0.021761 
+computed eigenvalues: 0.022525 
+computed eigenvalues: 0.022696 
+computed eigenvalues: 0.022751 
+computed eigenvalues: 0.023313 
+computed eigenvalues: 0.024034 
+computed eigenvalues: 0.024123 
+computed eigenvalues: 0.024377 
+computed eigenvalues: 0.024433 
+computed eigenvalues: 0.024539 
+computed eigenvalues: 0.024584 
+computed eigenvalues: 0.026647 
+computed eigenvalues: 0.026901 
+computed eigenvalues: 0.027023 
+computed eigenvalues: 0.027242 
+computed eigenvalues: 0.028283 
+computed eigenvalues: 0.028288 
+computed eigenvalues: 0.031192 
+computed eigenvalues: 0.031325 
+computed eigenvalues: 0.031664 
+computed eigenvalues: 0.031690 
+computed eigenvalues: 0.031977 
+computed eigenvalues: 0.032458 
+computed eigenvalues: 0.033324 
+computed eigenvalues: 0.034136 
+computed eigenvalues: 0.035880 
+computed eigenvalues: 0.036495 
+eigV error: 8.3440e-01 
+
+
+========================= #samples =    1000000 ============================
+# 1 converged in 244 steps, ritz(  1)=1.342777e-04, rnorm= 4.7018e-02
+# 2 converged in 577 steps, ritz(  2)=4.887060e-03, rnorm= 5.1024e-02
+# 3 converged in 577 steps, ritz(  3)=3.139153e-02, rnorm= 6.8344e-02
+# 4 converged in 707 steps, ritz(  4)=5.335295e-03, rnorm= 7.0705e-02
+# 5 converged in 707 steps, ritz(  5)=4.678353e-02, rnorm= 3.4257e-02
+# 6 converged in 707 steps, ritz(  6)=6.550437e-02, rnorm= 3.8583e-02
+# 7 converged in 883 steps, ritz(  7)=2.074974e-02, rnorm= 6.7017e-02
+# 8 converged in 1241 steps, ritz(  8)=1.868253e-03, rnorm= 6.6393e-02
+# 9 converged in 1549 steps, ritz(  9)=8.600979e-03, rnorm= 7.0007e-02
+# 10 converged in 1744 steps, ritz( 10)=6.829178e-03, rnorm= 5.8013e-02
+# 11 converged in 1744 steps, ritz( 11)=1.744013e-02, rnorm= 5.0085e-02
+# 12 converged in 1744 steps, ritz( 12)=2.580612e-02, rnorm= 6.5052e-02
+# 13 converged in 2255 steps, ritz( 13)=3.917089e-03, rnorm= 6.9954e-02
+# 14 converged in 2352 steps, ritz( 14)=8.860017e-03, rnorm= 5.9071e-02
+# 15 converged in 2552 steps, ritz( 15)=9.880220e-03, rnorm= 6.4848e-02
+# 16 converged in 2552 steps, ritz( 16)=1.963149e-02, rnorm= 6.5379e-02
+# 17 converged in 2909 steps, ritz( 17)=4.097487e-03, rnorm= 7.0564e-02
+# 18 converged in 3115 steps, ritz( 18)=5.722005e-03, rnorm= 6.4858e-02
+# 19 converged in 3374 steps, ritz( 19)=4.716700e-03, rnorm= 6.4795e-02
+# 20 converged in 3374 steps, ritz( 20)=1.715673e-02, rnorm= 6.9342e-02
+# 21 converged in 3665 steps, ritz( 21)=6.144809e-03, rnorm= 6.8897e-02
+# 22 converged in 3989 steps, ritz( 22)=4.170897e-03, rnorm= 6.3505e-02
+# 23 converged in 4247 steps, ritz( 23)=3.921511e-03, rnorm= 6.7660e-02
+# 24 converged in 4249 steps, ritz( 24)=1.369513e-02, rnorm= 4.6012e-02
+# 25 converged in 4249 steps, ritz( 25)=2.194765e-02, rnorm= 3.1853e-02
+# 26 converged in 4249 steps, ritz( 26)=2.670185e-02, rnorm= 3.1534e-02
+# 27 converged in 4250 steps, ritz( 27)=2.997038e-02, rnorm= 6.1841e-02
+# 28 converged in 4250 steps, ritz( 28)=3.431309e-02, rnorm= 6.8000e-02
+# 29 converged in 4250 steps, ritz( 29)=3.705145e-02, rnorm= 4.9332e-02
+# 30 converged in 4252 steps, ritz( 30)=3.979485e-02, rnorm= 6.4251e-02
+# 31 converged in 4252 steps, ritz( 31)=4.347194e-02, rnorm= 6.4409e-02
+# 32 converged in 4252 steps, ritz( 32)=4.677047e-02, rnorm= 3.2643e-02
+# 33 converged in 4253 steps, ritz( 33)=5.329221e-02, rnorm= 5.8922e-02
+# 34 converged in 4253 steps, ritz( 34)=5.559625e-02, rnorm= 7.0980e-02
+# 35 converged in 4253 steps, ritz( 35)=5.944122e-02, rnorm= 6.2098e-02
+# 36 converged in 4672 steps, ritz( 36)=5.310705e-03, rnorm= 6.9906e-02
+# 37 converged in 5035 steps, ritz( 37)=4.333424e-03, rnorm= 6.9124e-02
+# 38 converged in 5039 steps, ritz( 38)=1.212745e-02, rnorm= 6.5171e-02
+# 39 converged in 5554 steps, ritz( 39)=3.271982e-03, rnorm= 5.9504e-02
+# 40 converged in 5620 steps, ritz( 40)=8.148861e-03, rnorm= 5.5465e-02
+# 41 converged in 5875 steps, ritz( 41)=7.400178e-03, rnorm= 7.0994e-02
+# 42 converged in 5875 steps, ritz( 42)=1.780535e-02, rnorm= 5.8627e-02
+# 43 converged in 5875 steps, ritz( 43)=2.331600e-02, rnorm= 7.0682e-02
+# 44 converged in 6120 steps, ritz( 44)=4.110297e-03, rnorm= 6.6688e-02
+# 45 converged in 6533 steps, ritz( 45)=3.919528e-03, rnorm= 6.2697e-02
+# 46 converged in 6846 steps, ritz( 46)=5.460284e-03, rnorm= 7.0949e-02
+# 47 converged in 6858 steps, ritz( 47)=1.484758e-02, rnorm= 5.7395e-02
+# 48 converged in 7149 steps, ritz( 48)=3.877796e-03, rnorm= 6.4883e-02
+# 49 converged in 7149 steps, ritz( 49)=2.150090e-02, rnorm= 6.9293e-02
+# 50 converged in 7454 steps, ritz( 50)=4.669931e-03, rnorm= 6.5448e-02
+ parameters used for the calculation:
+ polym=15,  vmax=900, tol=1.000000e-06
+ nconv=50,  #mat-vect-prod=900,  #iter=7454
+computed eigenvalues: 0.000134 
+computed eigenvalues: 0.001868 
+computed eigenvalues: 0.003272 
+computed eigenvalues: 0.003878 
+computed eigenvalues: 0.003917 
+computed eigenvalues: 0.003920 
+computed eigenvalues: 0.003922 
+computed eigenvalues: 0.004097 
+computed eigenvalues: 0.004110 
+computed eigenvalues: 0.004171 
+computed eigenvalues: 0.004333 
+computed eigenvalues: 0.004670 
+computed eigenvalues: 0.004717 
+computed eigenvalues: 0.004887 
+computed eigenvalues: 0.005311 
+computed eigenvalues: 0.005335 
+computed eigenvalues: 0.005460 
+computed eigenvalues: 0.005722 
+computed eigenvalues: 0.006145 
+computed eigenvalues: 0.006829 
+computed eigenvalues: 0.007400 
+computed eigenvalues: 0.008149 
+computed eigenvalues: 0.008601 
+computed eigenvalues: 0.008860 
+computed eigenvalues: 0.009880 
+computed eigenvalues: 0.012127 
+computed eigenvalues: 0.013695 
+computed eigenvalues: 0.014848 
+computed eigenvalues: 0.017157 
+computed eigenvalues: 0.017440 
+computed eigenvalues: 0.017805 
+computed eigenvalues: 0.019631 
+computed eigenvalues: 0.020750 
+computed eigenvalues: 0.021501 
+computed eigenvalues: 0.021948 
+computed eigenvalues: 0.023316 
+computed eigenvalues: 0.025806 
+computed eigenvalues: 0.026702 
+computed eigenvalues: 0.029970 
+computed eigenvalues: 0.031392 
+computed eigenvalues: 0.034313 
+computed eigenvalues: 0.037051 
+computed eigenvalues: 0.039795 
+computed eigenvalues: 0.043472 
+computed eigenvalues: 0.046770 
+computed eigenvalues: 0.046784 
+computed eigenvalues: 0.053292 
+computed eigenvalues: 0.055596 
+computed eigenvalues: 0.059441 
+computed eigenvalues: 0.065504 
+eigV error: 2.4387e+00 
+
+
+========================= #samples =    5000000 ============================
+# 1 converged in 561 steps, ritz(  1)=2.818964e-04, rnorm= 3.2454e-02
+# 2 converged in 673 steps, ritz(  2)=5.773888e-03, rnorm= 3.6490e-02
+# 3 converged in 1087 steps, ritz(  3)=3.432756e-03, rnorm= 5.2429e-02
+# 4 converged in 1437 steps, ritz(  4)=3.932360e-03, rnorm= 5.0431e-02
+# 5 converged in 1437 steps, ritz(  5)=1.650992e-02, rnorm= 2.7610e-02
+# 6 converged in 1437 steps, ritz(  6)=2.304761e-02, rnorm= 4.2483e-02
