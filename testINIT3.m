@@ -2,8 +2,8 @@ close all;
 startup;
 
 SIZE = 5000000;
-sizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 2000000, 3000000, 4000000]
-%sizes = [5000000]
+sizes = [100000]
+%sizes = [1000]
 kwant = 5
 repeat = 1;
 what = "bin"
@@ -88,7 +88,7 @@ for n_samples = sizes
     if inits == 1
         dL = L2(n_sample1+1:end, n_sample1+1:end);
     elseif inits == 2
-        dA = A2(n_sample1+1:end, n_sample1+1:end)
+        dA = A2(n_sample1+1:end, n_sample1+1:end);
         if strcmp(what, "pos")
             dD = sparse([1:n_sample2-n_sample1], [1:n_sample2-n_sample1], sum(dA), n_sample2-n_sample1, n_sample2-n_sample1);
             dL = constructL(dD, dA);
@@ -156,6 +156,13 @@ for n_samples = sizes
     fprintf("eigV error: %10.4e \n", norm(L1*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
     fprintf("--------------------------------------------\n")
 
+    [V, D] = eig(full(L1));
+    reald = sort(diag(D));
+    fprintf("results from eig: \n")
+    fprintf("exact eigenvalues: %f \n", reald(1:10) - a0)
+    fprintf("--------------------------------------------\n")
+
+
     [dV, dD] = eigs(dL, kwant, 'smallestreal', 'Tolerance', tau);
     V0 = [eigenvectors; dV];
     vV = vecnorm(V0);
@@ -197,4 +204,4 @@ for n_samples = sizes
     
 end
 
-exit
+%exit

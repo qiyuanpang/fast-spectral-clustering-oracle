@@ -3,7 +3,7 @@ startup;
 
 sizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000]
 %sizes = [5000000]
-kwant = 5
+kwant = 10
 repeat = 1;
 what = "bin"
 
