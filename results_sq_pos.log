@@ -719,3 +719,86 @@ computed eigenvalues: 0.000012
 computed eigenvalues: 0.000013 
 computed eigenvalues: 0.000035 
 eigV error: 9.9579e-04 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 61280.7276 
+#iteration: 14750000000 =  2950 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000035 
+eigV error: 9.8672e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =   5 
+running time 61502.5371 
+#iteration: 29250000000 =  5850 *    5000000 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000014 
+computed eigenvalues: 0.000017 
+eigV error: 9.9174e-04 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 11606.3157 
+#iteration:  750000000 =   150 *    5000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000026 
+eigV error: 7.7892e-04 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 10183.5023 
+#iteration:  500000000 =   100 *    5000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000008 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000028 
+eigV error: 8.0724e-04 
+--------------------------------------------
+results from CoD(filter, momentum): converged k =  
+running time 14804.5910 
+#iteration: 1000000000 =   200 *    5000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000011 
+computed eigenvalues: 0.000028 
+eigV error: 8.1672e-04 
+--------------------------------------------
+results from CoD(filter, orth): converged k =   5 
+running time 12046.0930 
+#iteration: 1250000000 =   250 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000009 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000014 
+eigV error: 7.9706e-04 
+--------------------------------------------
+results from CoD(filter, orth, momentum): converged k =   5 
+running time 18063.2940 
+#iteration: 1750000000 =   350 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000010 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000014 
+eigV error: 7.9424e-04 
+[Warning: 0 of the 5 requested eigenvalues converged. Eigenvalues that did not
+converge are NaN.] 
+[> In eigs (line 176)
+In testSQ (line 200)] 
+--------------------------------------------
+results from eigs: 
+running time 16974.0089 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+eigV error:        NaN 

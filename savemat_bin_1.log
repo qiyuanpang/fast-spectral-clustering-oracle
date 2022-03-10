@@ -1,0 +1,55 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+    50000000
+
+
+kwant =
+
+     4
+
+
+what = 
+
+    "bin"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =   50000000 ============================
+Elapsed time is 22313.263688 seconds.
+sparsedata/sparse50000000/sparse50000000bin.mat saved! 

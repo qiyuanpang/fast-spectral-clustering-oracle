@@ -1,0 +1,193 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 8
+
+     1000000     5000000
+
+
+kwant =
+
+     2
+
+
+what = 
+
+    "pos"
+
+
+tau =
+
+    0.0100
+
+
+itermax =
+
+        2000
+
+
+stepsize =
+
+    0.0200
+
+
+w =
+
+     1
+
+
+alpha =
+
+    0.9000
+
+
+ncores =
+
+    40
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 40).
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0704 
+results from CoD_sc: 
+running time 69.4589 
+#iteration:      40350 /        125 /        322 
+computed eigenvalues: 0.007557 
+computed eigenvalues: 0.179188 
+eigV error: 6.3607e-01 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 0.6448 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.015133 
+eigV error: 7.6717e-09 
+cl  v.s. cl2: 0.69 
+cl1 v.s. cl2: 0.67 
+
+
+========================= #samples =       5000 ============================
+nonzeros rate:     0.0041 
+results from CoD_sc: 
+running time 68.2446 
+#iteration:     195100 /        100 /       1951 
+computed eigenvalues: 0.007406 
+computed eigenvalues: 0.024769 
+eigV error: 9.3671e-01 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 0.4829 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.005679 
+eigV error: 3.3002e-07 
+cl  v.s. cl2: 0.51 
+cl1 v.s. cl2: 0.90 
+
+
+========================= #samples =      10000 ============================
+nonzeros rate:     0.0049 
+results from CoD_sc: 
+running time 138.7011 
+#iteration:     377475 /        100 /       3774 
+computed eigenvalues: 0.005493 
+computed eigenvalues: 0.042001 
+eigV error: 8.4150e-01 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 3.9837 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000178 
+eigV error: 6.6893e-07 
+cl  v.s. cl2: 0.56 
+cl1 v.s. cl2: 0.61 
+
+
+========================= #samples =      50000 ============================
+nonzeros rate:     0.0013 
+results from CoD_sc: 
+running time 1662.0785 
+#iteration:    1945275 /        100 /      19452 
+computed eigenvalues: 0.005869 
+computed eigenvalues: 0.088370 
+eigV error: 9.6184e-01 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 43.6790 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000050 
+eigV error: 6.8573e-07 
+cl  v.s. cl2: 0.51 
+cl1 v.s. cl2: 0.74 
+
+
+========================= #samples =     100000 ============================
+nonzeros rate:     0.0003 
+results from CoD_sc: 
+running time 1788.1305 
+#iteration:    3835850 /         75 /      51144 
+computed eigenvalues: 0.008712 
+computed eigenvalues: 0.289920 
+eigV error: 1.1236e+00 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 521.9244 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000003 
+eigV error: 9.6754e-08 
+cl  v.s. cl2: 0.53 
+cl1 v.s. cl2: 0.97 
+
+
+========================= #samples =     500000 ============================
+nonzeros rate:     0.0001 
+results from CoD_sc: 
+running time 59513.9217 
+#iteration:   20027400 /        150 /     133516 
+computed eigenvalues: 0.004224 
+computed eigenvalues: 0.140181 
+eigV error: 9.9662e-01 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 541.1048 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+eigV error: 2.1867e-07 
+cl  v.s. cl2: 0.52 
+cl1 v.s. cl2: 0.75 
+
+
+========================= #samples =    1000000 ============================
+nonzeros rate:     0.0000 
+results from CoD_sc: 
+running time 156089.3921 
+#iteration:   39011875 /        100 /     390118 
+computed eigenvalues: 0.012114 
+computed eigenvalues: 0.270254 
+eigV error: 1.1991e+00 
+--------------------------------------------
+results from bchdav(L, rand init): 
+running time 1542.9707 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000029 
+eigV error: 4.8250e-07 
+cl  v.s. cl2: 0.52 
+cl1 v.s. cl2: 0.72 
+
+
+========================= #samples =    5000000 ============================
+nonzeros rate:     0.0000 

@@ -1,0 +1,36 @@
+type: bin 
+
+
+========================= #samples =       1000 ============================
+#1 converged in 1 steps, ritz(  1)=1.000000e-01, rnorm= 1.1915e-11
+#2 converged in 1 steps, ritz(  2)=1.003619e-01, rnorm= 6.8839e-10
+#3 converged in 1 steps, ritz(  3)=1.007655e-01, rnorm= 8.9755e-10
+#4 converged in 4 steps, ritz(  4)=9.206679e-01, rnorm= 7.4275e-04
+#5 converged in 5 steps, ritz(  5)=9.250078e-01, rnorm= 8.5004e-04
+#converged eig=5,  #wanted eig=5,  #iter=5, kinner=0, kouter=0
+ info of the eigenproblem and solver parameters :  dim=1000
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=21, augment=1, tol=1.00e-03
+ ORTH-cpu=2.9094e+01, ORTH-flops=2926000,  ORTH-flops/dim=2.9260e+03
+ mat-vect-cpu=1.0017e+00  #mat-vect-prod=302,  mat-vec-cpu/#mvprod=3.3170e-03
+ filt_MVcpu=1.3181e-01, filt_non_mv_cpu=3.4150e-03, refinement_cpu=9.2051e-02
+ CPU%: MV=88.57%(filt_MV=11.66%), ORTH=2572.55%, refinement=8.14%
+       other=-2569.26% (filt_nonMV=0.30%, Hn_cpu=34.50%, conv_cpu=412.49%)
+ TOTAL CPU seconds = 1.130935e+00
+results from bchdav: 
+running time 102.7653 
+iteration:          5 
+  1-th eigenvalue computed: -0.000000 
+  1-th eigenvalue computed: 0.000362 
+  1-th eigenvalue computed: 0.000766 
+  1-th eigenvalue computed: 0.820668 
+  1-th eigenvalue computed: 0.825008 
+eigV error: 8.5736e-04 
+--------------------------------------------
+results from eigs(Arpack): 
+running time 2.3674 
+  1-th eigenvalue computed: 0.000000 
+  1-th eigenvalue computed: 0.000362 
+  1-th eigenvalue computed: 0.000766 
+  1-th eigenvalue computed: 0.820640 
+  1-th eigenvalue computed: 0.824972 
+eigV error: 4.0958e-04 

@@ -256,3 +256,6 @@ eigV error: 2.4387e+00
 # 4 converged in 1437 steps, ritz(  4)=3.932360e-03, rnorm= 5.0431e-02
 # 5 converged in 1437 steps, ritz(  5)=1.650992e-02, rnorm= 2.7610e-02
 # 6 converged in 1437 steps, ritz(  6)=2.304761e-02, rnorm= 4.2483e-02
+# 7 converged in 1894 steps, ritz(  7)=1.116964e-03, rnorm= 5.2265e-02
+# 8 converged in 2590 steps, ritz(  8)=2.302190e-03, rnorm= 4.3608e-02
+# 9 converged in 2590 steps, ritz(  9)=1.026828e-02, rnorm= 4.4184e-02

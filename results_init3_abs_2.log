@@ -947,3 +947,184 @@ computed eigenvalues: 0.000428
 computed eigenvalues: 0.000695 
 eigV error: 1.0178e-03 
 --------------------------------------------
+#1 converged in 3 steps, ritz(  1)=1.000003e-01, rnorm= 8.1443e-05
+#2 converged in 7 steps, ritz(  2)=1.000014e-01, rnorm= 1.6101e-04
+#3 converged in 8 steps, ritz(  3)=1.000031e-01, rnorm= 1.0873e-04
+#4 converged in 10 steps, ritz(  4)=1.000013e-01, rnorm= 1.5863e-04
+#5 converged in 10 steps, ritz(  5)=1.000030e-01, rnorm= 1.5311e-04
+#converged eig=5,  #wanted eig=5,  #iter=10, kinner=2, kouter=0
+ info of the eigenproblem and solver parameters :  dim=3000000
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=23, augment=1, tol=1.00e-04
+ ORTH-cpu=2.1633e+02, ORTH-flops=11250000000,  ORTH-flops/dim=3.7500e+03
+ mat-vect-cpu=1.0456e+03  #mat-vect-prod=606,  mat-vec-cpu/#mvprod=1.7254e+00
+ filt_MVcpu=9.4175e+02, filt_non_mv_cpu=5.6070e+01, refinement_cpu=4.5990e+01
+ CPU%: MV=72.47%(filt_MV=65.27%), ORTH=14.99%, refinement=3.19%
+       other=9.35% (filt_nonMV=3.89%, Hn_cpu=1.01%, conv_cpu=0.25%)
+ TOTAL CPU seconds = 1.442860e+03
+results from bchdav(L1): 
+running time 1218.1144 
+#iteration:         10 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000003 
+eigV error: 1.3637e-03 
+--------------------------------------------
+#1 converged in 3 steps, ritz(  1)=1.000001e-01, rnorm= 1.1147e-04
+#2 converged in 3 steps, ritz(  2)=1.000002e-01, rnorm= 1.2754e-04
+#3 converged in 3 steps, ritz(  3)=1.000005e-01, rnorm= 1.9114e-04
+#4 converged in 3 steps, ritz(  4)=1.000022e-01, rnorm= 1.3776e-04
+#5 converged in 4 steps, ritz(  5)=1.000027e-01, rnorm= 3.9182e-05
+#converged eig=5,  #wanted eig=5,  #iter=4, kinner=0, kouter=0
+ info of the eigenproblem and solver parameters :  dim=3000050
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=20, augment=1, tol=1.00e-04
+ ORTH-cpu=4.8370e+01, ORTH-flops=2214036900,  ORTH-flops/dim=7.3800e+02
+ mat-vect-cpu=4.2551e+02  #mat-vect-prod=246,  mat-vec-cpu/#mvprod=1.7297e+00
+ filt_MVcpu=3.7514e+02, filt_non_mv_cpu=2.1900e+01, refinement_cpu=1.0900e+01
+ CPU%: MV=74.64%(filt_MV=65.80%), ORTH=8.48%, refinement=1.91%
+       other=14.96% (filt_nonMV=3.84%, Hn_cpu=0.53%, conv_cpu=0.25%)
+ TOTAL CPU seconds = 5.700800e+02
+results from bchdav(L2, good init): 
+running time 498.4318 
+#iteration:          4 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000003 
+eigV error: 1.3095e-03 
+--------------------------------------------
+#1 converged in 3 steps, ritz(  1)=1.000003e-01, rnorm= 8.1470e-05
+#2 converged in 6 steps, ritz(  2)=1.000038e-01, rnorm= 2.0312e-04
+#3 converged in 7 steps, ritz(  3)=1.000018e-01, rnorm= 1.7609e-04
+#4 converged in 8 steps, ritz(  4)=1.000117e-01, rnorm= 1.6232e-04
+#5 converged in 10 steps, ritz(  5)=1.000021e-01, rnorm= 1.6987e-04
+#converged eig=5,  #wanted eig=5,  #iter=10, kinner=2, kouter=0
+ info of the eigenproblem and solver parameters :  dim=3000050
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=24, augment=1, tol=1.00e-04
+ ORTH-cpu=2.4093e+02, ORTH-flops=11310188500,  ORTH-flops/dim=3.7700e+03
+ mat-vect-cpu=1.2264e+03  #mat-vect-prod=606,  mat-vec-cpu/#mvprod=2.0238e+00
+ filt_MVcpu=1.1030e+03, filt_non_mv_cpu=5.9480e+01, refinement_cpu=5.0770e+01
+ CPU%: MV=73.67%(filt_MV=66.26%), ORTH=14.47%, refinement=3.05%
+       other=8.80% (filt_nonMV=3.57%, Hn_cpu=0.92%, conv_cpu=0.27%)
+ TOTAL CPU seconds = 1.664660e+03
+results from bchdav(L2, rand init): 
+running time 1423.2479 
+#iteration:         10 
+computed eigenvalues: 0.000000 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000012 
+eigV error: 1.6377e-03 
+
+
+========================= #samples =    4000000 ============================
+
+dA =
+
+   All zero sparse: 50x50
+
+[Warning: 1 of the 5 requested eigenvalues converged. Eigenvalues that did not
+converge are NaN.] 
+[> In eigs (line 176)
+In testINIT3 (line 115)] 
+results from eigs(L1): 
+running time 2945.1738 
+computed eigenvalues: 0.000000 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+computed eigenvalues: NaN 
+eigV error:        NaN 
+--------------------------------------------
+# 1 converged in 7 steps, ritz(  1)=1.000039e-01, rnorm= 1.4749e-04
+# 2 converged in 31 steps, ritz(  2)=1.000701e-01, rnorm= 1.1843e-04
+# 3 converged in 38 steps, ritz(  3)=1.000770e-01, rnorm= 1.2827e-04
+# 4 converged in 38 steps, ritz(  4)=1.005565e-01, rnorm= 1.2467e-04
+# 5 converged in 38 steps, ritz(  5)=1.010586e-01, rnorm= 6.9812e-05
+ parameters used for the calculation:
+ polym=11,  vmax=20, tol=1.000000e-04
+ nconv=5,  #mat-vect-prod=20,  #iter=38
+results from chdav(L1): 
+running time 2594.4369 
+#iteration:         38 
+computed eigenvalues: 0.000004 
+computed eigenvalues: 0.000070 
+computed eigenvalues: 0.000077 
+computed eigenvalues: 0.000556 
+computed eigenvalues: 0.001059 
+eigV error: 1.2012e-03 
+--------------------------------------------
+#1 converged in 5 steps, ritz(  1)=1.000026e-01, rnorm= 1.3613e-04
+#2 converged in 7 steps, ritz(  2)=1.000035e-01, rnorm= 1.6035e-04
+#3 converged in 8 steps, ritz(  3)=1.000057e-01, rnorm= 1.6897e-04
+#4 converged in 9 steps, ritz(  4)=1.000058e-01, rnorm= 1.4590e-04
+#5 converged in 10 steps, ritz(  5)=1.000087e-01, rnorm= 1.5675e-04
+#converged eig=5,  #wanted eig=5,  #iter=10, kinner=2, kouter=0
+ info of the eigenproblem and solver parameters :  dim=4000000
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=23, augment=1, tol=1.00e-04
+ ORTH-cpu=2.9874e+02, ORTH-flops=15000000000,  ORTH-flops/dim=3.7500e+03
+ mat-vect-cpu=1.7084e+03  #mat-vect-prod=606,  mat-vec-cpu/#mvprod=2.8192e+00
+ filt_MVcpu=1.5293e+03, filt_non_mv_cpu=8.0750e+01, refinement_cpu=6.4250e+01
+ CPU%: MV=74.88%(filt_MV=67.03%), ORTH=13.09%, refinement=2.82%
+       other=9.21% (filt_nonMV=3.54%, Hn_cpu=0.43%, conv_cpu=0.25%)
+ TOTAL CPU seconds = 2.281510e+03
+results from bchdav(L1): 
+running time 1967.0688 
+#iteration:         10 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+eigV error: 1.5404e-03 
+--------------------------------------------
+#1 converged in 3 steps, ritz(  1)=1.000012e-01, rnorm= 1.1123e-04
+#2 converged in 3 steps, ritz(  2)=1.000022e-01, rnorm= 1.8999e-04
+#3 converged in 3 steps, ritz(  3)=1.000026e-01, rnorm= 1.7846e-04
+#4 converged in 3 steps, ritz(  4)=1.000056e-01, rnorm= 9.9491e-05
+#5 converged in 4 steps, ritz(  5)=1.000089e-01, rnorm= 6.2937e-05
+#converged eig=5,  #wanted eig=5,  #iter=4, kinner=0, kouter=0
+ info of the eigenproblem and solver parameters :  dim=4000050
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=20, augment=1, tol=1.00e-04
+ ORTH-cpu=6.6750e+01, ORTH-flops=2808035100,  ORTH-flops/dim=7.0200e+02
+ mat-vect-cpu=6.4666e+02  #mat-vect-prod=246,  mat-vec-cpu/#mvprod=2.6287e+00
+ filt_MVcpu=5.5798e+02, filt_non_mv_cpu=3.1620e+01, refinement_cpu=1.5720e+01
+ CPU%: MV=74.21%(filt_MV=64.03%), ORTH=7.66%, refinement=1.80%
+       other=16.33% (filt_nonMV=3.63%, Hn_cpu=0.46%, conv_cpu=0.21%)
+ TOTAL CPU seconds = 8.714200e+02
+results from bchdav(L2, good init): 
+running time 767.3248 
+#iteration:          4 
+computed eigenvalues: 0.000001 
+computed eigenvalues: 0.000002 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000009 
+eigV error: 1.3723e-03 
+--------------------------------------------
+#1 converged in 5 steps, ritz(  1)=1.000034e-01, rnorm= 1.3987e-04
+#2 converged in 6 steps, ritz(  2)=1.000082e-01, rnorm= 2.0257e-04
+#3 converged in 7 steps, ritz(  3)=1.000067e-01, rnorm= 1.8243e-04
+#4 converged in 8 steps, ritz(  4)=1.000057e-01, rnorm= 1.3299e-04
+#5 converged in 11 steps, ritz(  5)=1.000050e-01, rnorm= 8.9074e-05
+#converged eig=5,  #wanted eig=5,  #iter=11, kinner=2, kouter=0
+ info of the eigenproblem and solver parameters :  dim=4000050
+ polym=11,  blk=5,  vomax=35,  vimax=30,  n=29, augment=1, tol=1.00e-04
+ ORTH-cpu=3.4529e+02, ORTH-flops=17280216000,  ORTH-flops/dim=4.3200e+03
+ mat-vect-cpu=1.6021e+03  #mat-vect-prod=666,  mat-vec-cpu/#mvprod=2.4056e+00
+ filt_MVcpu=1.4356e+03, filt_non_mv_cpu=8.6630e+01, refinement_cpu=6.9950e+01
+ CPU%: MV=72.13%(filt_MV=64.63%), ORTH=15.55%, refinement=3.15%
+       other=9.18% (filt_nonMV=3.90%, Hn_cpu=0.88%, conv_cpu=0.28%)
+ TOTAL CPU seconds = 2.221180e+03
+results from bchdav(L2, rand init): 
+running time 1850.5170 
+#iteration:         11 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000005 
+computed eigenvalues: 0.000006 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000008 
+eigV error: 1.5459e-03 

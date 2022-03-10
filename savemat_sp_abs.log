@@ -1,0 +1,78 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+        1000       10000      100000     1000000    10000000    50000000
+
+
+kwant =
+
+     4
+
+
+what = 
+
+    "abs"
+
+
+tau =
+
+   1.0000e-06
+
+
+itermax =
+
+   200
+
+
+stepsize =
+
+    0.1000
+
+
+w =
+
+     0
+
+
+alpha =
+
+    0.9000
+
+
+
+========================= #samples =       1000 ============================
+Elapsed time is 1.882973 seconds.
+sparsedata/sparse1000/sparse1000abs.mat saved! 
+
+
+========================= #samples =      10000 ============================
+Elapsed time is 18.671719 seconds.
+sparsedata/sparse10000/sparse10000abs.mat saved! 
+
+
+========================= #samples =     100000 ============================
+Elapsed time is 186.948579 seconds.
+sparsedata/sparse100000/sparse100000abs.mat saved! 
+
+
+========================= #samples =    1000000 ============================
+Elapsed time is 1904.326138 seconds.
+sparsedata/sparse1000000/sparse1000000abs.mat saved! 
+
+
+========================= #samples =   10000000 ============================
+Elapsed time is 19340.255117 seconds.
+sparsedata/sparse10000000/sparse10000000abs.mat saved! 
+
+
+========================= #samples =   50000000 ============================

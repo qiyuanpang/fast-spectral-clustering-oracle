@@ -716,3 +716,23 @@ eigV error: 1.4016e-12
 
 ========================= #samples =    5000000 ============================
 nonzeros rate:     0.0000 
+--------------------------------------------
+results from CoD(sq): 
+running time 159895.7607 
+#iteration: 36500000000 =  7300 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000035 
+eigV error: 9.9528e-04 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 75393.5285 
+#iteration: 19500000000 =  3900 *    5000000 
+computed eigenvalues: 0.000003 
+computed eigenvalues: 0.000007 
+computed eigenvalues: 0.000012 
+computed eigenvalues: 0.000013 
+computed eigenvalues: 0.000035 
+eigV error: 9.9070e-04 

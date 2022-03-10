@@ -1,11 +1,11 @@
 close all;
 startup;
 
-sizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000]
+sizes = [50000000]
 %sizes = [5000000]
 kwant = 4
 repeat = 1;
-what = "bin"
+what = "abs"
 
 % parameters for Chebyshev-Davidson method
 m = 9;
@@ -24,7 +24,7 @@ for n_samples = sizes
     % n_samples = 5000
     fprintf("\n\n")
     fprintf("========================= #samples = %10d ============================\n", n_samples)
-    fname = "sparsedata/" + num2str(n_samples) + "/sparse" + num2str(n_samples) + ".json"; 
+    fname = "sparsedata/" + "sparse"  + num2str(n_samples) + "/sparse" + num2str(n_samples) + ".json"; 
     fid = fopen(fname, 'r'); 
     raw = fread(fid, inf); 
     str = char(raw');     
@@ -34,7 +34,7 @@ for n_samples = sizes
     %A = (A+A')/2;
     toc
     
-    savefile = "sparsedata/" + num2str(n_samples) + "/sparse" + num2str(n_samples) + what  + ".mat";
+    savefile = "sparsedata/" + "sparse" + num2str(n_samples) + "/sparse" + num2str(n_samples) + what  + ".mat";
     save(savefile, 'A', '-v7.3');
     fprintf("%s saved! \n", savefile);
 end

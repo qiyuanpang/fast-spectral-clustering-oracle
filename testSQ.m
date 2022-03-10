@@ -1,11 +1,11 @@
 close all;
 startup;
 
-sizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000]
-%sizes = [5000000]
+%sizes = [1000, 5000, 10000, 50000, 100000, 500000, 1000000, 5000000]
+sizes = [50000000]
 kwant = 5
 repeat = 1;
-what = "abs"
+what = "bin"
 
 % parameters for Chebyshev-Davidson method
 m = 5;
@@ -30,7 +30,7 @@ for n_samples = sizes
     % n_samples = 5000
     fprintf("\n\n")
     fprintf("========================= #samples = %10d ============================\n", n_samples)
-    fname = "sparsedata/" + num2str(n_samples) + "/sparse" + num2str(n_samples) + what + ".mat"; 
+    fname = "sparsedata/sparse" + num2str(n_samples) + "/sparse" + num2str(n_samples) + what + ".mat"; 
     %fid = fopen(fname, 'r'); 
     %raw = fread(fid, inf); 
     %str = char(raw');     
@@ -71,19 +71,19 @@ for n_samples = sizes
     fprintf("nonzeros rate: %10.4f \n", nnz(L)/n_samples/n_samples)
     %fprintf("initial loss: %10.4e \n\n", loss(V0))
     
-    tic;
-    for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, tau, batch);
-    end
-    time = toc/repeat;
+    %tic;
+    %for i = 1:repeat
+    %    [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, tau, batch);
+    %end
+    %time = toc/repeat;
 
-    fprintf("--------------------------------------------\n")
-    fprintf("results from CoD(sq): \n")
-    fprintf("running time %.4f \n", time)
-    fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
-    fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
-    %fprintf("eigV error: %10.4e , loss: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), fnorm)/norm(eigenvectors*diag(eigenvalues), fnorm), loss(eigenvectors))
-    fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
+    %fprintf("--------------------------------------------\n")
+    %fprintf("results from CoD(sq): \n")
+    %fprintf("running time %.4f \n", time)
+    %fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
+    %fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
+    %%fprintf("eigV error: %10.4e , loss: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), fnorm)/norm(eigenvectors*diag(eigenvalues), fnorm), loss(eigenvectors))
+    %fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
    
     
     tic;
@@ -101,18 +101,18 @@ for n_samples = sizes
     fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
 
 
-    tic;
-    for i = 1:repeat
-        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, tau, batch);
-    end
-    time = toc/repeat;
+    %tic;
+    %for i = 1:repeat
+    %    [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, tau, batch);
+    %end
+    %time = toc/repeat;
 
-    fprintf("--------------------------------------------\n")
-    fprintf("results from CoD(orth, momentum): converged k = %3d \n", ck)
-    fprintf("running time %.4f \n", time)
-    fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
-    fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
-    fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
+    %fprintf("--------------------------------------------\n")
+    %fprintf("results from CoD(orth, momentum): converged k = %3d \n", ck)
+    %fprintf("running time %.4f \n", time)
+    %fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
+    %fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
+    %fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
 
 
     b = 2+a0;
@@ -149,64 +149,64 @@ for n_samples = sizes
 
     %b = norm(L,1);
     %a = a0 + (b-a0)/20;
-    tic;
-    for i = 1:repeat
-        [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
-    end
-    time = toc/repeat;
+    %tic;
+    %for i = 1:repeat
+    %    [eigenvalues, eigenvectors, iters] = CoordinateDescent_triofm_sq_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
+    %end
+    %time = toc/repeat;
 
-    fprintf("--------------------------------------------\n")
-    fprintf("results from CoD(filter, momentum): converged k =  \n")
-    fprintf("running time %.4f \n", time)
-    fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
-    fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
-    fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
+    %fprintf("--------------------------------------------\n")
+    %fprintf("results from CoD(filter, momentum): converged k =  \n")
+    %fprintf("running time %.4f \n", time)
+    %fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
+    %fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
+    %fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
 
     
     %b = norm(L,1);
     %a = a0 + (b-a0)/20;
-    tic;
-    for i = 1:repeat
-        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m, a, b, a0, p, tau, batch);
-    end
-    time = toc/repeat;
+    %tic;
+    %for i = 1:repeat
+    %    [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, 0, m, a, b, a0, p, tau, batch);
+    %end
+    %time = toc/repeat;
 
-    fprintf("--------------------------------------------\n")
-    fprintf("results from CoD(filter, orth): converged k = %3d \n", ck)
-    fprintf("running time %.4f \n", time)
-    fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
-    fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
-    fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
+    %fprintf("--------------------------------------------\n")
+    %fprintf("results from CoD(filter, orth): converged k = %3d \n", ck)
+    %fprintf("running time %.4f \n", time)
+    %fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
+    %fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
+    %fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
     
     
     %b = norm(L,1);
     %a = a0 + (b-a0)/20;
-    tic;
-    for i = 1:repeat
-        [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
-    end
-    time = toc/repeat;
+    %tic;
+    %for i = 1:repeat
+    %    [eigenvalues, eigenvectors, iters, ck] = CoordinateDescent_triofm_sq_orth_cheb(L, kwant, stepsize, nonzerocols, itermax, V0, w, alpha, m, a, b, a0, p, tau, batch);
+    %end
+    %time = toc/repeat;
 
-    fprintf("--------------------------------------------\n")
-    fprintf("results from CoD(filter, orth, momentum): converged k = %3d \n", ck)
-    fprintf("running time %.4f \n", time)
-    fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
-    fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
-    fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
+    %fprintf("--------------------------------------------\n")
+    %fprintf("results from CoD(filter, orth, momentum): converged k = %3d \n", ck)
+    %fprintf("running time %.4f \n", time)
+    %fprintf("#iteration: %10d = %5d * %10d \n", iters*n_samples, iters, n_samples)
+    %fprintf("computed eigenvalues: %f \n", sort(eigenvalues)-a0)
+    %fprintf("eigV error: %10.4e \n", norm(L*eigenvectors - eigenvectors*diag(eigenvalues), 'fro')/norm(eigenvectors*diag(eigenvalues), 'fro'))
        
 
-    tic;
-    for i = 1:repeat
-        [eigV, eigW] = eigs(L, kwant, 'smallestabs', 'Tolerance', 1e-10);
-    end
-    timeE = toc/repeat;
+    %tic;
+    %for i = 1:repeat
+    %    [eigV, eigW] = eigs(L, kwant, 'smallestabs', 'Tolerance', 1e-10);
+    %end
+    %timeE = toc/repeat;
 
-    fprintf("--------------------------------------------\n")
-    fprintf("results from eigs: \n")
-    fprintf("running time %.4f \n", timeE)
-    fprintf("computed eigenvalues: %f \n", sort(diag(eigW))-a0)
-    %fprintf("eigV error: %10.4e , loss: %10.4e \n", norm(L*eigV - eigV*eigW, fnorm)/norm(eigV*eigW, fnorm), loss(eigV))
-    fprintf("eigV error: %10.4e \n", norm(L*eigV - eigV*eigW, 'fro')/norm(eigV*eigW, 'fro'))
+    %fprintf("--------------------------------------------\n")
+    %fprintf("results from eigs: \n")
+    %fprintf("running time %.4f \n", timeE)
+    %fprintf("computed eigenvalues: %f \n", sort(diag(eigW))-a0)
+    %%fprintf("eigV error: %10.4e , loss: %10.4e \n", norm(L*eigV - eigV*eigW, fnorm)/norm(eigV*eigW, fnorm), loss(eigV))
+    %fprintf("eigV error: %10.4e \n", norm(L*eigV - eigV*eigW, 'fro')/norm(eigV*eigW, 'fro'))
 end
 
 exit

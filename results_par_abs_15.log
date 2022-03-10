@@ -1,0 +1,167 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2021 The MathWorks, Inc.
+             R2021a Update 3 (9.10.0.1684407) 64-bit (glnxa64)
+                                May 27, 2021
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+sizes =
+
+  Columns 1 through 6
+
+        1000        5000       10000       50000      100000      500000
+
+  Columns 7 through 8
+
+     1000000     5000000
+
+
+kwant =
+
+    15
+
+
+what = 
+
+    "abs"
+
+
+tau =
+
+   1.0000e-03
+
+
+itermax =
+
+       10000
+
+
+stepsize =
+
+    0.0200
+
+
+w =
+
+     1
+
+
+alpha =
+
+    0.9000
+
+
+ncores =
+
+    40
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 40).
+
+
+========================= #samples =       1000 ============================
+nonzeros rate:     0.0817 
+--------------------------------------------
+results from CoD(sq): 
+running time 1464.9743 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.013085 
+computed eigenvalues: 0.016063 
+computed eigenvalues: 0.077637 
+computed eigenvalues: 0.134688 
+computed eigenvalues: 0.145909 
+computed eigenvalues: 0.172436 
+computed eigenvalues: 0.178221 
+computed eigenvalues: 0.201394 
+computed eigenvalues: 0.225405 
+computed eigenvalues: 0.241380 
+computed eigenvalues: 0.250027 
+computed eigenvalues: 0.255019 
+computed eigenvalues: 0.273957 
+computed eigenvalues: 0.282715 
+computed eigenvalues: 0.324868 
+eigV error: 6.2138e-03 
+--------------------------------------------
+results from CoD(sq, momentum): 
+running time 117.8116 
+#iteration:     750000 =   750 *       1000 
+computed eigenvalues: 0.013085 
+computed eigenvalues: 0.016063 
+computed eigenvalues: 0.077637 
+computed eigenvalues: 0.134688 
+computed eigenvalues: 0.145909 
+computed eigenvalues: 0.172436 
+computed eigenvalues: 0.178221 
+computed eigenvalues: 0.201394 
+computed eigenvalues: 0.225405 
+computed eigenvalues: 0.241380 
+computed eigenvalues: 0.250027 
+computed eigenvalues: 0.255019 
+computed eigenvalues: 0.273956 
+computed eigenvalues: 0.282716 
+computed eigenvalues: 0.332756 
+eigV error: 9.4267e-04 
+--------------------------------------------
+results from CoD(orth, momentum): converged k =  10 
+running time 1468.5525 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.013085 
+computed eigenvalues: 0.016063 
+computed eigenvalues: 0.077637 
+computed eigenvalues: 0.134688 
+computed eigenvalues: 0.145909 
+computed eigenvalues: 0.172436 
+computed eigenvalues: 0.178221 
+computed eigenvalues: 0.201394 
+computed eigenvalues: 0.260861 
+computed eigenvalues: 0.295692 
+computed eigenvalues: 0.333433 
+computed eigenvalues: 0.991260 
+computed eigenvalues: 1.008233 
+computed eigenvalues: 1.012993 
+computed eigenvalues: 1.033558 
+eigV error: 1.2469e-01 
+--------------------------------------------
+results from CoD(filter): converged k =  
+running time 1462.1659 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.013085 
+computed eigenvalues: 0.016063 
+computed eigenvalues: 0.557715 
+computed eigenvalues: 0.922117 
+computed eigenvalues: 0.938690 
+computed eigenvalues: 0.966359 
+computed eigenvalues: 0.988039 
+computed eigenvalues: 0.991659 
+computed eigenvalues: 0.993494 
+computed eigenvalues: 1.004777 
+computed eigenvalues: 1.007381 
+computed eigenvalues: 1.010428 
+computed eigenvalues: 1.013387 
+computed eigenvalues: 1.016656 
+computed eigenvalues: 1.091642 
+eigV error: 1.9723e-01 
+--------------------------------------------
+results from CoD(filter+2): converged k =  
+running time 1486.4797 
+#iteration:   10000000 = 10000 *       1000 
+computed eigenvalues: 0.013085 
+computed eigenvalues: 0.020896 
+computed eigenvalues: 0.789938 
+computed eigenvalues: 0.947784 
+computed eigenvalues: 0.972506 
+computed eigenvalues: 0.977473 
+computed eigenvalues: 0.994821 
+computed eigenvalues: 0.998883 
+computed eigenvalues: 1.001373 
+computed eigenvalues: 1.004864 
+computed eigenvalues: 1.010619 
+computed eigenvalues: 1.012892 
+computed eigenvalues: 1.015640 
+computed eigenvalues: 1.018157 
+computed eigenvalues: 1.096138 
+eigV error: 1.7664e-01 
